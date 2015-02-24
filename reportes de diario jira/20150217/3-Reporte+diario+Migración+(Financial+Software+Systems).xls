@@ -1,0 +1,305 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>3-Reporte diario Migración (Financial Software Systems)</title>
+<style type="text/css">
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#ffffff" height="47">
+        <td colspan="13">
+            <img src="https://support.finsoftware.com/jira/jira-logo-scaled.png" width="170" height="47" border="0" alt="3-Reporte diario Migración (Financial Software Systems)">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            <a href="https://support.finsoftware.com/jira/secure/IssueNavigator.jspa?requestId=13533">3-Reporte diario Migración (Financial Software Systems)</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            Displaying <strong>4</strong> issues at <strong>19/Feb/15 11:24 AM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+    
+                                
+        
+        
+                    <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        
+                            <thead>
+    <tr class="rowHeader">
+
+    
+                                    <th class="colHeaderLink headerrow-issuekey"
+
+                    
+                        >
+                    Key
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-issuetype"
+
+                    
+                        >
+                    Issue Type
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-status"
+
+                    
+                        >
+                    Status
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-priority"
+
+                    
+                        >
+                    Priority
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-summary"
+
+                    
+                        >
+                    Summary
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-description"
+
+                    
+                        >
+                    Description
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-reporter"
+
+                    
+                        >
+                    Reporter
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-assignee"
+
+                    
+                        >
+                    Assignee
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-created"
+
+                    
+                        >
+                    Created
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-duedate"
+
+                    
+                        >
+                    Due Date
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-updated"
+
+                    
+                        >
+                    Updated
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-resolutiondate"
+
+                    
+                        >
+                    Resolved
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-labels"
+
+                    
+                        >
+                    Labels
+                                    </th>
+                                </tr>
+</thead>
+<tbody>
+
+
+            
+            <tr id="issuerow51730" rel="51730" data-issuekey="BXMPRJ-376" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-376">BXMPRJ-376</a>
+</td>
+                                    <td class="nav issuetype"  > Task</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                Crear estructura Division / Promotor con uso de seguridad t centro de costos
+    </td>
+                                    <td class="nav description"  >      se debe de crear estructura division/promotor con uso de seguridad de TAS y unida al centro de costos
+  </td>
+                                    <td class="nav reporter"  >            Ana hernandez
+    </td>
+                                    <td class="nav assignee"  >            Gerardo Gomez
+    </td>
+                                    <td class="nav created"  > 22/Jul/14 12:07 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:37 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow56978" rel="56978" data-issuekey="BXMPRJ-1195" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1195">BXMPRJ-1195</a>
+</td>
+                                    <td class="nav issuetype"  > Task</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                Error en Precios del BX+MP
+    </td>
+                                    <td class="nav description"  >      en el fondo BX+MP los precios estan mal, aparecen desfasados, este fondo para las compras liquida mismo dia y en las ventas liquida 48 hrs. con el precio del dia que liquido.<br/>
+<br/>
+Ya se le comento a Gerardo y esta pendiente de resolver.
+  </td>
+                                    <td class="nav reporter"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav assignee"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav created"  > 30/Jan/15 4:23 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 5:32 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow56531" rel="56531" data-issuekey="BXMPRJ-1146" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1146">BXMPRJ-1146</a>
+</td>
+                                    <td class="nav issuetype"  > Task</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                error en fecha de liquidacion del I+CORP.
+    </td>
+                                    <td class="nav description"  >      en la revisión de precios para el dia 29, en el fondo I+CORP, en la columna de liquidación presenta la fecha del 2014-08-26 lo caul es incorrecto, este fondo liquida 48 hrs., revise la parametrizacion del fondo y esta correcta., les adjunto pantalla. 
+  </td>
+                                    <td class="nav reporter"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav assignee"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav created"  > 21/Jan/15 12:04 PM </td>
+                                    <td class="nav duedate"  >    29/Jan/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 5:31 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, Detiene</td>
+            </tr>
+        <tr id="issuerow57300" rel="57300" data-issuekey="BXMPRJ-1253" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1253">BXMPRJ-1253</a>
+</td>
+                                    <td class="nav issuetype"  > Task</td>
+                                    <td class="nav status"  >Open
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Clientes con custodia externa_Liquidación 
+    </td>
+                                    <td class="nav description"  >      Los clientes con custodia externa No debe de liquidar contra el saldo, es decir, NO se requiere de la posición, ni del efectivo. Este tema fue tratado en una reunión con José Sotelo - Gerardo Gomez.
+  </td>
+                                    <td class="nav reporter"  >            Agustin Gutierrez
+    </td>
+                                    <td class="nav assignee"  >            Agustin Gutierrez
+    </td>
+                                    <td class="nav created"  > 09/Feb/15 9:47 AM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 11:10 AM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    PruebasD4, ciclo4</td>
+            </tr>
+                    
+            </table>
+
+                    
+
+    <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="13"><font size="1">
+        Generated at Thu Feb 19 12:24:48 EST 2015 by Javier Hernández using JIRA 4.4.5#665-sha1:422aeadac7e4462fb4ae63fce804ff78c4258dd6.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>

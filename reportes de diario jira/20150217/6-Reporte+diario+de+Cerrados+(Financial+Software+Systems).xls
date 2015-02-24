@@ -1,0 +1,481 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>6-Reporte diario de Cerrados (Financial Software Systems)</title>
+<style type="text/css">
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#ffffff" height="47">
+        <td colspan="13">
+            <img src="https://support.finsoftware.com/jira/jira-logo-scaled.png" width="170" height="47" border="0" alt="6-Reporte diario de Cerrados (Financial Software Systems)">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            <a href="https://support.finsoftware.com/jira/secure/IssueNavigator.jspa?requestId=13538">6-Reporte diario de Cerrados (Financial Software Systems)</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            Displaying <strong>10</strong> issues at <strong>19/Feb/15 11:27 AM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+    
+                                
+        
+        
+                    <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        
+                            <thead>
+    <tr class="rowHeader">
+
+    
+                                    <th class="colHeaderLink headerrow-issuekey"
+
+                    
+                        >
+                    Key
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-issuetype"
+
+                    
+                        >
+                    Issue Type
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-status"
+
+                    
+                        >
+                    Status
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-priority"
+
+                    
+                        >
+                    Priority
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-summary"
+
+                    
+                        >
+                    Summary
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-description"
+
+                    
+                        >
+                    Description
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-reporter"
+
+                    
+                        >
+                    Reporter
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-assignee"
+
+                    
+                        >
+                    Assignee
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-created"
+
+                    
+                        >
+                    Created
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-duedate"
+
+                    
+                        >
+                    Due Date
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-updated"
+
+                    
+                        >
+                    Updated
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-resolutiondate"
+
+                    
+                        >
+                    Resolved
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-labels"
+
+                    
+                        >
+                    Labels
+                                    </th>
+                                </tr>
+</thead>
+<tbody>
+
+
+            
+            <tr id="issuerow56442" rel="56442" data-issuekey="BXMPRJ-1132" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1132">BXMPRJ-1132</a>
+</td>
+                                    <td class="nav issuetype"  > Bug</td>
+                                    <td class="nav status"  >Closed
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                ERROR EN EL REPORTE DE VALUACION DE LA POSICION PROPIA (BMV)
+    </td>
+                                    <td class="nav description"  >      Al revisar la valuación de las posiciones que se encuentran en los diferentes portafolios, estamos encontrando diferencias en el portafolio de &quot;Disponible para la Venta&quot; (9065), faltan títulos en los IS151210 por una cantidad de 29,951, equivalentes a un par de reportos vigentes a plazo.<br/>
+<br/>
+sin embargo al revisar el reporte diario de operación si se encuentran vigentes dichas operaciones.<br/>
+
+  </td>
+                                    <td class="nav reporter"  >            Martin Cruz
+    </td>
+                                    <td class="nav assignee"  >            German Gomez
+    </td>
+                                    <td class="nav created"  > 17/Jan/15 12:19 AM </td>
+                                    <td class="nav duedate"  >    16/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 5:55 PM </td>
+                                    <td class="nav resolutiondate"  > 17/Feb/15 5:55 PM </td>
+                                    <td class="nav labels"  >    CICLO4, Detiene, Reincidencia1</td>
+            </tr>
+        <tr id="issuerow57604" rel="57604" data-issuekey="BXMPRJ-1306" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1306">BXMPRJ-1306</a>
+</td>
+                                    <td class="nav issuetype"  > Delivery</td>
+                                    <td class="nav status"  >Closed
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Error en el reporte de valucion de la posicion propia (BMV)  (Delivery)
+    </td>
+                                    <td class="nav description"  >      Se entrega el query para aplicar en el ambiente de producción, de la incidencia BXMPRJ-1132
+  </td>
+                                    <td class="nav reporter"  >            Ever Hernandez
+    </td>
+                                    <td class="nav assignee"  >            German Gomez
+    </td>
+                                    <td class="nav created"  > 16/Feb/15 6:32 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 2:45 PM </td>
+                                    <td class="nav resolutiondate"  > 17/Feb/15 2:45 PM </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow57629" rel="57629" data-issuekey="BXMPRJ-1311" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1311">BXMPRJ-1311</a>
+</td>
+                                    <td class="nav issuetype"  > Delivery</td>
+                                    <td class="nav status"  >Closed
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Depósitos Físicos realizados en TAS no están reflejados en FIABLE
+    </td>
+                                    <td class="nav description"  >      Depósitos Físicos realizados en TAS no están reflejados en FIABLE
+  </td>
+                                    <td class="nav reporter"  >            Edgar Richter
+    </td>
+                                    <td class="nav assignee"  >            Francisco Morales López
+    </td>
+                                    <td class="nav created"  > 17/Feb/15 12:34 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 1:47 PM </td>
+                                    <td class="nav resolutiondate"  > 17/Feb/15 1:47 PM </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow55682" rel="55682" data-issuekey="BXMPRJ-1021" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1021">BXMPRJ-1021</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Closed
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                POLITICA DE LIQUIDEZ RETIROS 
+    </td>
+                                    <td class="nav description"  >      El cliente 473984 tiene un saldo de 23,617,210.18 y se captura un retiro para emitir cheque por $ 80,000.00 y el sistema regresa el error que el cliente no cuenta con saldo suficiente lo cual es incorrrecto. <br/>
+por otro lado debería permitir al usuario Tesorero sobregirar el contrato y no lo permitio <br/>
+quedo pendiente de sus comentarios 
+  </td>
+                                    <td class="nav reporter"  >            Isela Martínez
+    </td>
+                                    <td class="nav assignee"  >            Isela Martínez
+    </td>
+                                    <td class="nav created"  > 09/Dec/14 6:24 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 1:34 PM </td>
+                                    <td class="nav resolutiondate"  > 08/Jan/15 2:15 PM </td>
+                                    <td class="nav labels"  >    SCPC</td>
+            </tr>
+        <tr id="issuerow57210" rel="57210" data-issuekey="BXMPRJ-1237" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1237">BXMPRJ-1237</a>
+</td>
+                                    <td class="nav issuetype"  > Delivery</td>
+                                    <td class="nav status"  >Closed
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Complemento del Rep. De reportos vigentes (DREPW110)
+    </td>
+                                    <td class="nav description"  >      Reporte que existe en Tas, se requiere complementar con los siguientes campos:<br/>
+<br/>
+Tipo de contrato: Discrecional o No discrecional.<br/>
+<br/>
+Tipo de Valor: Se refiere al tipo de valor según el catálogo de emisoras registradas en TAS<br/>
+<br/>
+Servicio: Se refiera al servicio por el cual se realizó la operación.<br/>
+<br/>
+Perfil de Inversión: Se refiere al perfil de inversión del cliente.<br/>
+<br/>
+MGA: Se refiere al MGA del cliente.<br/>
+<br/>
+Sofisticado: Se refiere a si el cliente tiene la marca de cliente sofisticado, las opciones son &quot;Sí&quot; &quot;No&quot;.<br/>
+<br/>
+Institucional: Se refiere a si el cliente tiene la marca de Inversionista Institucional, las opciones son &quot;Sí&quot; &quot;No&quot;.<br/>
+<br/>
+Asesor: Se refiere al nombre del Asesor Independiente en el caso de que el cliente tenga contratado a alguno.
+  </td>
+                                    <td class="nav reporter"  >            Salvador García
+    </td>
+                                    <td class="nav assignee"  >            Francisco Morales López
+    </td>
+                                    <td class="nav created"  > 05/Feb/15 6:25 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 1:05 PM </td>
+                                    <td class="nav resolutiondate"  > 17/Feb/15 1:05 PM </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow57167" rel="57167" data-issuekey="BXMPRJ-1225" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1225">BXMPRJ-1225</a>
+</td>
+                                    <td class="nav issuetype"  > Delivery</td>
+                                    <td class="nav status"  >Closed
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Rompimiento de lineas operativas sin autorizacion (Delivery)
+    </td>
+                                    <td class="nav description"  >      Se entrega la corrección solicitada en el ticket bxmprj-1114
+  </td>
+                                    <td class="nav reporter"  >            Ever Hernandez
+    </td>
+                                    <td class="nav assignee"  >            Francisco Morales López
+    </td>
+                                    <td class="nav created"  > 04/Feb/15 6:57 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 12:58 PM </td>
+                                    <td class="nav resolutiondate"  > 17/Feb/15 12:58 PM </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow56164" rel="56164" data-issuekey="BXMPRJ-1060" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1060">BXMPRJ-1060</a>
+</td>
+                                    <td class="nav issuetype"  > Delivery</td>
+                                    <td class="nav status"  >Closed
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Reporte oficial Convalidación
+    </td>
+                                    <td class="nav description"  >      Reporte Ecim (Convalidación) (Decim100.w)<br/>
+Entrega de Reporte Oficial Ecim (Convalidación).<br/>
+Fuentes<br/>
+Pruebas (archivos y MPF)<br/>
+Checklist<br/>
+<br/>
+<br/>
+
+  </td>
+                                    <td class="nav reporter"  >            Carmen Méndez
+    </td>
+                                    <td class="nav assignee"  >            Francisco Morales López
+    </td>
+                                    <td class="nav created"  > 07/Jan/15 12:54 PM </td>
+                                    <td class="nav duedate"  >    12/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 12:19 PM </td>
+                                    <td class="nav resolutiondate"  > 17/Feb/15 12:19 PM </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow57605" rel="57605" data-issuekey="BXMPRJ-1307" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1307">BXMPRJ-1307</a>
+</td>
+                                    <td class="nav issuetype"  > Delivery</td>
+                                    <td class="nav status"  >Closed
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Lineas de crerdito contraparte
+    </td>
+                                    <td class="nav description"  >      Se entrega la solución de la incidencia bxmprj-1198
+  </td>
+                                    <td class="nav reporter"  >            Ever Hernandez
+    </td>
+                                    <td class="nav assignee"  >            Ever Hernandez
+    </td>
+                                    <td class="nav created"  > 16/Feb/15 6:46 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 12:12 PM </td>
+                                    <td class="nav resolutiondate"  > 17/Feb/15 12:12 PM </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow52035" rel="52035" data-issuekey="BXMPRJ-396" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-396">BXMPRJ-396</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Closed
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Emisoras de Mercado de Dinero y sociedades de inversión
+    </td>
+                                    <td class="nav description"  >      Se requiere que TAS informe a FIABLE mediane una interfaz el alta y cambios de emisoras de mercado de capitales y sociedades de inversión, para controlar el modulo de garantias por prestamos de valores.
+  </td>
+                                    <td class="nav reporter"  >            Francisco Morales López
+    </td>
+                                    <td class="nav assignee"  >            Antonio Laija Olmedo
+    </td>
+                                    <td class="nav created"  > 31/Jul/14 6:25 PM </td>
+                                    <td class="nav duedate"  >    04/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 12:09 PM </td>
+                                    <td class="nav resolutiondate"  > 16/Feb/15 2:33 PM </td>
+                                    <td class="nav labels"  >    Broker, FSP1307, Gap</td>
+            </tr>
+        <tr id="issuerow57586" rel="57586" data-issuekey="BXMPRJ-1301" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1301">BXMPRJ-1301</a>
+</td>
+                                    <td class="nav issuetype"  > Delivery</td>
+                                    <td class="nav status"  >Closed
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Error en los precios costos de la canasta inicial (delivery)
+    </td>
+                                    <td class="nav description"  >      se entrega la solución de la incidencia bxmprj-1239
+  </td>
+                                    <td class="nav reporter"  >            Ever Hernandez
+    </td>
+                                    <td class="nav assignee"  >            German Gomez
+    </td>
+                                    <td class="nav created"  > 15/Feb/15 12:44 AM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 16/Feb/15 7:38 PM </td>
+                                    <td class="nav resolutiondate"  > 16/Feb/15 7:38 PM </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+                    
+            </table>
+
+                    
+
+    <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="13"><font size="1">
+        Generated at Thu Feb 19 12:27:20 EST 2015 by Javier Hernández using JIRA 4.4.5#665-sha1:422aeadac7e4462fb4ae63fce804ff78c4258dd6.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>

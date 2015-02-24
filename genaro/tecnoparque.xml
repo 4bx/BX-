@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AG version="3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.4js.com/ns/gst/2.41/agmodel.xsd">
+  <Database name="tecnoparque" schemaFile="C:\Users\erodriguez\Desktop\proyectos\BX+\genaro\tecnoparque.4dbx">
+    <Table name="usuarios">
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="nombre" notNull="1">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="c_empresa" notNull="1">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBIndex name="primary" primary="1" unique="1">
+        <Column name="c_empresa"/>
+        <Column name="nombre"/>
+      </DBIndex>
+    </Table>
+    <Table name="h_carga_jira">
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="id_jira" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="key" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="issue_type" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="status" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="priority" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="summary" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="description" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="reporter" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="assignee" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="created" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="due_date" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="updated" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="resolved" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="labels" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_carga" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME HOUR TO SECOND" defaultValue="" fglDatatype="DATETIME HOUR TO SECOND" fglLength="1642" length="25" name="hora_carga" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+    </Table>
+    <Table name="h_actividad_jira">
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(1)" fglLength="1" length="1" name="c_status" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(5)" fglLength="5" length="5" name="paso" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="key_" notNull="1">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="issue_type" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="status" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="priority" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(300)" fglLength="300" length="300" name="summary" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(3000)" fglLength="3000" length="3000" name="description" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="reporter" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="assignee" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_del_dia" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_creacion_created" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_inicio" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="dias_transcurridos_al_dia" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_prometida__vs_ns" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_prometida__due_date" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="dias_ret_vs_f_prom_ns" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="dias_ret_vs_f_prom_due_date" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="dias_brecha" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_cierre_resolved" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="cumplio_ns" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="cumplio_fp" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="dias_efectivos" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(250)" fglLength="250" length="250" name="labels" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="nivel_servicio" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_reincidencia_1" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_reincidencia_2" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_reincidencia_3" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_reincidencia_4" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="sow3" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_autorizacion" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="dias_autorizacion" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="raiz_wa" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+    </Table>
+    <Table name="empresas">
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="c_empresa" notNull="1">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="empresa" notNull="1">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBIndex name="primary" primary="1" unique="1">
+        <Column name="c_empresa"/>
+      </DBIndex>
+    </Table>
+    <Table name="carga_jira">
+      <DBColumn datatype="SERIAL" defaultValue="" fglDatatype="SERIAL" fglLength="4" length="11" name="id_jira" notNull="1">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="key_" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="issue_type" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="status_" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="priority" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(300)" fglLength="300" length="300" name="summary" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(3000)" fglLength="3000" length="3000" name="description" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="reporter" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="assignee" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="created" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="due_date" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="updated" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="resolved" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="labels" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_carga" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME HOUR TO SECOND" defaultValue="" fglDatatype="DATETIME HOUR TO SECOND" fglLength="1642" length="25" name="hora_carga" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBIndex name="primary" primary="1" unique="1">
+        <Column name="id_jira"/>
+      </DBIndex>
+    </Table>
+    <Table name="actividad_jira">
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(1)" fglLength="1" length="1" name="c_status" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(5)" fglLength="5" length="5" name="paso" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="key_" notNull="1">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="issue_type" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="status" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="priority" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(300)" fglLength="300" length="300" name="summary" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(3000)" fglLength="3000" length="3000" name="description" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="reporter" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="assignee" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_del_dia" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_creacion_created" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_inicio" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="dias_transcurridos_al_dia" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_prometida__vs_ns" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_prometida__due_date" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="dias_ret_vs_f_prom_ns" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="dias_ret_vs_f_prom_due_date" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="dias_brecha" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_cierre_resolved" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="cumplio_ns" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="cumplio_fp" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="INTEGER" defaultValue="" fglDatatype="INTEGER" fglLength="4" length="11" name="dias_efectivos" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(250)" fglLength="250" length="250" name="labels" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="nivel_servicio" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_reincidencia_1" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_reincidencia_2" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_reincidencia_3" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_reincidencia_4" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="sow3" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="DATETIME YEAR TO SECOND" defaultValue="" fglDatatype="DATETIME YEAR TO SECOND" fglLength="3594" length="25" name="fecha_autorizacion" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="SMALLINT" defaultValue="" fglDatatype="SMALLINT" fglLength="2" length="6" name="dias_autorizacion" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="raiz_wa" notNull="0">
+        <DynamicProperties>
+          <DynamicProperty name="widget" value="Edit"/>
+          <DynamicProperty name="label" value=""/>
+        </DynamicProperties>
+      </DBColumn>
+      <DBIndex name="primary" primary="1" unique="1">
+        <Column name="key_"/>
+      </DBIndex>
+    </Table>
+  </Database>
+</AG>

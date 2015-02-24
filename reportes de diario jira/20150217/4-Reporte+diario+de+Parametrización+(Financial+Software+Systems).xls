@@ -1,0 +1,280 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>4-Reporte diario de Parametrización (Financial Software Systems)</title>
+<style type="text/css">
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#ffffff" height="47">
+        <td colspan="13">
+            <img src="https://support.finsoftware.com/jira/jira-logo-scaled.png" width="170" height="47" border="0" alt="4-Reporte diario de Parametrización (Financial Software Systems)">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            <a href="https://support.finsoftware.com/jira/secure/IssueNavigator.jspa?requestId=13531">4-Reporte diario de Parametrización (Financial Software Systems)</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            Displaying <strong>3</strong> issues at <strong>19/Feb/15 11:25 AM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+    
+                                
+        
+        
+                    <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        
+                            <thead>
+    <tr class="rowHeader">
+
+    
+                                    <th class="colHeaderLink headerrow-issuekey"
+
+                    
+                        >
+                    Key
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-issuetype"
+
+                    
+                        >
+                    Issue Type
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-status"
+
+                    
+                        >
+                    Status
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-priority"
+
+                    
+                        >
+                    Priority
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-summary"
+
+                    
+                        >
+                    Summary
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-description"
+
+                    
+                        >
+                    Description
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-reporter"
+
+                    
+                        >
+                    Reporter
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-assignee"
+
+                    
+                        >
+                    Assignee
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-created"
+
+                    
+                        >
+                    Created
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-duedate"
+
+                    
+                        >
+                    Due Date
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-updated"
+
+                    
+                        >
+                    Updated
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-resolutiondate"
+
+                    
+                        >
+                    Resolved
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-labels"
+
+                    
+                        >
+                    Labels
+                                    </th>
+                                </tr>
+</thead>
+<tbody>
+
+
+            
+            <tr id="issuerow51715" rel="51715" data-issuekey="BXMPRJ-375" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-375">BXMPRJ-375</a>
+</td>
+                                    <td class="nav issuetype"  > Document</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Reoprte de posición en corto de los mercados bursátiles &lt;MCRPOSCO&gt;
+    </td>
+                                    <td class="nav description"  >      MCRPOSCO ( posición en corto de los mercados bursátiles)<br/>
+<br/>
+Se solicita la creación de un reporte de posición en corto para todos los mercados bursátiles.
+  </td>
+                                    <td class="nav reporter"  >            Janet Dominguez
+    </td>
+                                    <td class="nav assignee"  >            Cesar Guzmán
+    </td>
+                                    <td class="nav created"  > 21/Jul/14 8:01 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 3:02 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, Gap, InFSD, Pool, PruebasD3</td>
+            </tr>
+        <tr id="issuerow56981" rel="56981" data-issuekey="BXMPRJ-1198" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1198">BXMPRJ-1198</a>
+</td>
+                                    <td class="nav issuetype"  > Document</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                LINEAS CONTRAPARTE EN DINERO
+    </td>
+                                    <td class="nav description"  >      Al capturar varias operaciones, empezó a enviar alertamientos por sobregiro en las líneas, por lo que se documenta el dato estimado y el dato que envía TAS.
+  </td>
+                                    <td class="nav reporter"  >            Martin Cruz
+    </td>
+                                    <td class="nav assignee"  >            Martin Cruz
+    </td>
+                                    <td class="nav created"  > 30/Jan/15 4:54 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 1:44 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    CICLO4, PruebasD4</td>
+            </tr>
+        <tr id="issuerow56212" rel="56212" data-issuekey="BXMPRJ-1072" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1072">BXMPRJ-1072</a>
+</td>
+                                    <td class="nav issuetype"  > Document</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                Requiero me sea asignado la consulta para obtener el reporte de dividendos en efectivo 
+    </td>
+                                    <td class="nav description"  >      Requiero esta consulta para poder validar los cálculos que realiza el sistema cuando paga dividendos en efectivo
+  </td>
+                                    <td class="nav reporter"  >            Rafael Cedillo
+    </td>
+                                    <td class="nav assignee"  >            Rafael Cedillo
+    </td>
+                                    <td class="nav created"  > 09/Jan/15 1:18 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 16/Feb/15 7:15 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+                    
+            </table>
+
+                    
+
+    <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="13"><font size="1">
+        Generated at Thu Feb 19 12:25:21 EST 2015 by Javier Hernández using JIRA 4.4.5#665-sha1:422aeadac7e4462fb4ae63fce804ff78c4258dd6.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>

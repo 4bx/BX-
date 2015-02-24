@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Workspace defaultApplication="18736" version="2.4">
+  <Group label="Group_1">
+    <Application dependencies="1986" id="18736" label="carga_jira">
+      <File filePath="genaro/f_carga_jira.4fd"/>
+      <File filePath="genaro/MainCargaJira.4gl"/>
+    </Application>
+    <Library id="1986" label="Databases">
+      <File filePath="genaro/tecnoparque.4dbx"/>
+    </Library>
+  </Group>
+</Workspace>

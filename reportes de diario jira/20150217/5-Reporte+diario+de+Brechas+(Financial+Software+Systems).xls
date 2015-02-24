@@ -1,0 +1,985 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>5-Reporte diario de Brechas (Financial Software Systems)</title>
+<style type="text/css">
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#ffffff" height="47">
+        <td colspan="13">
+            <img src="https://support.finsoftware.com/jira/jira-logo-scaled.png" width="170" height="47" border="0" alt="5-Reporte diario de Brechas (Financial Software Systems)">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            <a href="https://support.finsoftware.com/jira/secure/IssueNavigator.jspa?requestId=13530">5-Reporte diario de Brechas (Financial Software Systems)</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            Displaying <strong>26</strong> issues at <strong>19/Feb/15 11:26 AM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+    
+                                
+        
+        
+                    <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        
+                            <thead>
+    <tr class="rowHeader">
+
+    
+                                    <th class="colHeaderLink headerrow-issuekey"
+
+                    
+                        >
+                    Key
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-issuetype"
+
+                    
+                        >
+                    Issue Type
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-status"
+
+                    
+                        >
+                    Status
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-priority"
+
+                    
+                        >
+                    Priority
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-summary"
+
+                    
+                        >
+                    Summary
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-description"
+
+                    
+                        >
+                    Description
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-reporter"
+
+                    
+                        >
+                    Reporter
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-assignee"
+
+                    
+                        >
+                    Assignee
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-created"
+
+                    
+                        >
+                    Created
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-duedate"
+
+                    
+                        >
+                    Due Date
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-updated"
+
+                    
+                        >
+                    Updated
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-resolutiondate"
+
+                    
+                        >
+                    Resolved
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-labels"
+
+                    
+                        >
+                    Labels
+                                    </th>
+                                </tr>
+</thead>
+<tbody>
+
+
+            
+            <tr id="issuerow54314" rel="54314" data-issuekey="BXMPRJ-807" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-807">BXMPRJ-807</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Open
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                En el formato de la posición de TAS debe de ordenar la Columna de &quot;Emisora&quot; de una forma mas ordenada
+    </td>
+                                    <td class="nav description"  >      Al ver una posición el sistema TAS deberia de ordenar la columna &quot;Posición&quot; primero por mercado (esto ya lo hace) y despues la columna &quot;Emisora&quot; por orden Alfabetico ya que se veria mas ordenada la Posición al igual que Fiable lo muestra.<br/>
+
+  </td>
+                                    <td class="nav reporter"  >            Ana Mayte Topete
+    </td>
+                                    <td class="nav assignee"  >            Ana Mayte Topete
+    </td>
+                                    <td class="nav created"  > 22/Oct/14 12:05 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:42 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    CICLO4</td>
+            </tr>
+        <tr id="issuerow45212" rel="45212" data-issuekey="BXMPRJ-31" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-31">BXMPRJ-31</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Open
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Comisiones e Ingresos 
+    </td>
+                                    <td class="nav description"  >      Cobro de comisiones a contratos e ingresos generados por promotor.<br/>
+Corresponde al ID TAS 36 de Brechas e Interfaces Bx+ 
+  </td>
+                                    <td class="nav reporter"  >            Iñigo Aguilar
+    </td>
+                                    <td class="nav assignee"  >            Sergio Rangel
+    </td>
+                                    <td class="nav created"  > 19/Oct/13 3:19 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:42 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, FSP1307, Gap, Licencia</td>
+            </tr>
+        <tr id="issuerow45210" rel="45210" data-issuekey="BXMPRJ-30" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-30">BXMPRJ-30</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Notificaciones via e-mail de Operaciones de Derivados y Sobregiros.
+    </td>
+                                    <td class="nav description"  >      Especificación para la notificación via e-mail de la realización de operaciones de Derivados así como en los sobregiros de líneas de crédito para operaciones de Derivados y Mercado de Dinero.<br/>
+Corresponde al ID 10 y 16 de Brechas e Interfaces
+  </td>
+                                    <td class="nav reporter"  >            Alejandra Ivonne González Venancio
+    </td>
+                                    <td class="nav assignee"  >            Francisco Morales López
+    </td>
+                                    <td class="nav created"  > 18/Oct/13 6:41 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:40 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    FSP578, FSP579, PruebasD2</td>
+            </tr>
+        <tr id="issuerow47364" rel="47364" data-issuekey="BXMPRJ-93" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-93">BXMPRJ-93</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Administrar títulos y efectivo por inclumplimiento.
+    </td>
+                                    <td class="nav description"  >      Administrar títulos y efectivo cuando se incumpla la entrega o recepción de los valores.<br/>
+Corresponde al ID 116 de Brechas e Interfaces.
+  </td>
+                                    <td class="nav reporter"  >            Agustin Gutierrez
+    </td>
+                                    <td class="nav assignee"  >            Sergio Rangel
+    </td>
+                                    <td class="nav created"  > 20/Jan/14 1:46 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:40 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, Gap, Licencia, TAS-CM</td>
+            </tr>
+        <tr id="issuerow53657" rel="53657" data-issuekey="BXMPRJ-708" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-708">BXMPRJ-708</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                En la revisión de Perfiles se identifico que No existe en TAS (Factor de ISR en la Consulta de Precios)
+    </td>
+                                    <td class="nav description"  >      En la revisión de Perfiles se identifico que No existe en TAS <br/>
+<br/>
+No se tiene evidencia del incidente
+  </td>
+                                    <td class="nav reporter"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav assignee"  >            Francisco Morales López
+    </td>
+                                    <td class="nav created"  > 29/Sep/14 7:37 PM </td>
+                                    <td class="nav duedate"  >    17/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:40 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, FSP1307, Gap, PruebasDX, ciclo3</td>
+            </tr>
+        <tr id="issuerow53086" rel="53086" data-issuekey="BXMPRJ-574" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-574">BXMPRJ-574</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Eliminar ordenes de fondos programadas
+    </td>
+                                    <td class="nav description"  >      TAS no permite cancelar compras o ventas de fondos previamente programadas o formadas, solo se puede cancelar operaciones el día que corresponde reportar a la operadora y previo al cierre.
+  </td>
+                                    <td class="nav reporter"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav assignee"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav created"  > 11/Sep/14 5:00 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:32 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, FSP1307, Gap, PruebasD2</td>
+            </tr>
+        <tr id="issuerow45167" rel="45167" data-issuekey="BXMPRJ-26" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-26">BXMPRJ-26</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Funcionalidad Hos to Host
+    </td>
+                                    <td class="nav description"  >      Se anexa documento de especificación para su revisión.<br/>
+Funcionalidad Host to Host.<br/>
+Corresponden a los ID 137 y 163 del Inventario de Interfaces proporcionado por Bx+.
+  </td>
+                                    <td class="nav reporter"  >            Agustin Gutierrez
+    </td>
+                                    <td class="nav assignee"  >            Antonio Laija Olmedo
+    </td>
+                                    <td class="nav created"  > 17/Oct/13 1:36 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:31 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    FSP578, FSP579, PruebasD4</td>
+            </tr>
+        <tr id="issuerow51246" rel="51246" data-issuekey="BXMPRJ-316" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-316">BXMPRJ-316</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Realizar Interfaz Solutrust Fideicomisos (Operaciones) 
+    </td>
+                                    <td class="nav description"  >      Realizar interfaz
+  </td>
+                                    <td class="nav reporter"  >            Ana hernandez
+    </td>
+                                    <td class="nav assignee"  >            Ana hernandez
+    </td>
+                                    <td class="nav created"  > 03/Jul/14 2:27 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:30 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, FSP1307, Gap</td>
+            </tr>
+        <tr id="issuerow47360" rel="47360" data-issuekey="BXMPRJ-90" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-90">BXMPRJ-90</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Failed Test
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Realizar Carga de Boletin Electronico
+    </td>
+                                    <td class="nav description"  >      Realizar la carga de boletín electrónica para generar la aplicación de ejercicios de derecho de manera automática.<br/>
+Corresponde al ID 31 de Brechas e Interfaces.
+  </td>
+                                    <td class="nav reporter"  >            Agustin Gutierrez
+    </td>
+                                    <td class="nav assignee"  >            Agustin Gutierrez
+    </td>
+                                    <td class="nav created"  > 20/Jan/14 12:03 PM </td>
+                                    <td class="nav duedate"  >    17/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:30 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    FSP1307, PruebasD4</td>
+            </tr>
+        <tr id="issuerow47358" rel="47358" data-issuekey="BXMPRJ-88" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-88">BXMPRJ-88</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Failed Test
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Repore Global de Utilidades.
+    </td>
+                                    <td class="nav description"  >      Reporte global de utilidades por promotor, trader, centro de costos (corvalin)<br/>
+Corresponde al ID 25 de Brechas e Interfaces.
+  </td>
+                                    <td class="nav reporter"  >            Jocelyn Vazquez 
+    </td>
+                                    <td class="nav assignee"  >            Sergio Rangel
+    </td>
+                                    <td class="nav created"  > 20/Jan/14 11:59 AM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:29 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, FSP580, PruebasD2</td>
+            </tr>
+        <tr id="issuerow54525" rel="54525" data-issuekey="BXMPRJ-847" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-847">BXMPRJ-847</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Failed Test
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Brecha Contabilidad: Póliza de Provisión de Comisiones pos Distribución de Fondos de Inversión)
+    </td>
+                                    <td class="nav description"  >      Brecha Contabilidad: Póliza de Provisión de Comisiones pos Distribución de Fondos de Inversión)<br/>
+<br/>
+Se sube especificación
+  </td>
+                                    <td class="nav reporter"  >            Jocelyn Vazquez 
+    </td>
+                                    <td class="nav assignee"  >            Arturo Saldivar
+    </td>
+                                    <td class="nav created"  > 28/Oct/14 7:43 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:28 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, Ciclo4, Gap, OutScope</td>
+            </tr>
+        <tr id="issuerow51049" rel="51049" data-issuekey="BXMPRJ-290" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-290">BXMPRJ-290</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Failed Test
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                El archivo en excel de SI para Compass Group sólo debe mostrar ordenes registradas a una fecha
+    </td>
+                                    <td class="nav description"  >      El archivo en excel de Sociedades de Inversión para Compass Group está mostrando tanto ordenes que se registraron el día en el que se genera dicho archivo, como aquellas que liquidan y que se operaron con anterioridad. Lo correcto es que solamente despliegue las ordenes registradas en el día. Adicionalmente, en el campo de contrato debe de aparecer el contrato 1459, que es el número de contrato que tiene el distribuidor registrado en el sistema SisDisi.<br/>
+
+  </td>
+                                    <td class="nav reporter"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav assignee"  >            Arturo Saldivar
+    </td>
+                                    <td class="nav created"  > 25/Jun/14 5:18 PM </td>
+                                    <td class="nav duedate"  >    13/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:28 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, FSP1307, Gap</td>
+            </tr>
+        <tr id="issuerow54813" rel="54813" data-issuekey="BXMPRJ-891" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-891">BXMPRJ-891</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Desarrollar la Convalidación de la Asignación de precios de títulos Moneda Nacional
+    </td>
+                                    <td class="nav description"  >      Se requiere el desarrollo de la Convalidación de acuerdo a los requerimientos mensuales de Banco de México.<br/>
+<br/>
+El layout se conforma de la columna A a la H de la pestaña &quot;AP1_Tenencia A_Precio MXN0714&quot;<br/>
+
+  </td>
+                                    <td class="nav reporter"  >            Veronica Angeles
+    </td>
+                                    <td class="nav assignee"  >            Gerardo Tenopala
+    </td>
+                                    <td class="nav created"  > 06/Nov/14 2:27 PM </td>
+                                    <td class="nav duedate"  >    25/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:01 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    CICLO4</td>
+            </tr>
+        <tr id="issuerow57133" rel="57133" data-issuekey="BXMPRJ-1219" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1219">BXMPRJ-1219</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                Realizar carga de operaciones de colocaciones primarias
+    </td>
+                                    <td class="nav description"  >      Se requiere recibir del modulo de colocaciones primarias las asignaciones que este sistema realiza. En TAS se pueden grabar como operaciones de compra - venta de mercado de dinero, pero se deben de marcar en algun campo como colocacion primaria, ya que en el estado de cuenta y en la consulta de movtos se debe de identificar de esta manera.<br/>
+<br/>
+Para mercado de capitales, hay que solicitarle la modificación a la interface actual, para que en algún campo nos indique que la operación recibida es de colocación primaria. El objetivo al igual que en MD es que se identifiquen como colocación primaria.
+  </td>
+                                    <td class="nav reporter"  >            Gerardo Gomez
+    </td>
+                                    <td class="nav assignee"  >            Jacqueline Barradas
+    </td>
+                                    <td class="nav created"  > 04/Feb/15 11:57 AM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 5:59 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow53211" rel="53211" data-issuekey="BXMPRJ-578" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-578">BXMPRJ-578</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Realizar asignación de fondos en cuanto se tenga precio
+    </td>
+                                    <td class="nav description"  >      Realizar la asignación de fondos en el cierre del dia en que se conozca el precio. Es decir, el sistema no debe de esperar hasta un día antes para realizar la asignación y liquidación de operaciones. 
+  </td>
+                                    <td class="nav reporter"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav assignee"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav created"  > 17/Sep/14 10:23 AM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 5:26 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, FSP1307, Gap, PruebasD2</td>
+            </tr>
+        <tr id="issuerow54583" rel="54583" data-issuekey="BXMPRJ-853" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-853">BXMPRJ-853</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Solicitud de Cambio para la Interfaz Investor-Zeus
+    </td>
+                                    <td class="nav description"  >      Se anexa documento de Solicitud de Cambio para el archivo de posición del módulo Zeus
+  </td>
+                                    <td class="nav reporter"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav assignee"  >            Margarita Arellano
+    </td>
+                                    <td class="nav created"  > 30/Oct/14 12:18 PM </td>
+                                    <td class="nav duedate"  >    12/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 4:44 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow57601" rel="57601" data-issuekey="BXMPRJ-1304" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1304">BXMPRJ-1304</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                Realizar interfaz de colocaciones primarias de capitales
+    </td>
+                                    <td class="nav description"  >      Se requiere que en la interfaz de capitales se indentifique colocacion primaria
+  </td>
+                                    <td class="nav reporter"  >            Gerardo Gomez
+    </td>
+                                    <td class="nav assignee"  >            Jacqueline Barradas
+    </td>
+                                    <td class="nav created"  > 16/Feb/15 1:40 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 3:04 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow51350" rel="51350" data-issuekey="BXMPRJ-329" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-329">BXMPRJ-329</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Reporte de Custodias por Sucursal
+    </td>
+                                    <td class="nav description"  >      REPORTE DE CUSTODIAS POR SUCURSAL (Agregar Sucursal) Al reporte de custodias por sucursal se requiere agrupación por sucursal.
+  </td>
+                                    <td class="nav reporter"  >            Ana hernandez
+    </td>
+                                    <td class="nav assignee"  >            Ana hernandez
+    </td>
+                                    <td class="nav created"  > 09/Jul/14 11:50 AM </td>
+                                    <td class="nav duedate"  >    16/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 3:01 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, FSP1307, Gap, PruebasD2</td>
+            </tr>
+        <tr id="issuerow56768" rel="56768" data-issuekey="BXMPRJ-1160" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1160">BXMPRJ-1160</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Investigating
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                Relizar adecuaciones al estado de cuenta
+    </td>
+                                    <td class="nav description"  >      Relizar la adicion de los siguintes conceptos:<br/>
+A continuación los conceptos que no se tenían contemplados en el formato original.<br/>
+ <br/>
+/BanderasDeProcesamiento<br/>
+perfilinversion<br/>
+serviciosinversion<br/>
+ <br/>
+/Comprobante<br/>
+Lugarexpedicion<br/>
+Numctapago<br/>
+Foliofiscalorig<br/>
+Seriefoliofiscalorig<br/>
+Fechafoliofiscalorig<br/>
+Montofoliofiscalorig<br/>
+metodoDePago<br/>
+tipoDeComprobante<br/>
+ <br/>
+/Emisor<br/>
+/regímenes<br/>
+regimen<br/>
+ <br/>
+/Conceptos<br/>
+/Adicionales<br/>
+importeConImpuestos<br/>
+impuestos<br/>
+porcentaje<br/>
+encabezado<br/>
+SubTotal<br/>
+SubTotalImpuestos<br/>
+SubTotalConImpuestos<br/>
+SubTotalPorcentaje<br/>
+ <br/>
+/Impuestos<br/>
+/Retenciones<br/>
+                        /Retencion<br/>
+                                  Importe    (cambio la etiqueta valor anterior  importeImpuesto)<br/>
+ <br/>
+/Traslados<br/>
+/Traslado<br/>
+                               Importe    (cambio la etiqueta, valor anterior   importeImpuesto)<br/>
+ <br/>
+/Totales<br/>
+LeyendaImpuestoAño<br/>
+LeyendaImpuestoMes<br/>
+leyendaInforme    <br/>
+ <br/>
+/ECB<br/>
+/InformeResultados<br/>
+/Linea<br/>
+valuacionCorteAnual<br/>
+ <br/>
+/InformeResultadosAdicional<br/>
+/Linea<br/>
+Perfil<br/>
+valuacionCorte<br/>
+valuacionCorteAnual<br/>
+ <br/>
+/DetallePosicion<br/>
+Sumaporc<br/>
+/Posicion<br/>
+Tipoval<br/>
+dias/diasporvencer  (solo cambio la etiqueta)<br/>
+valorMerc/valor  (solo cambio la etiqueta)<br/>
+fechaVenc/fechavencimiento  (solo cambio la etiqueta)<br/>
+premio<br/>
+plusminusvalia<br/>
+valorAdquisicion<br/>
+valorCosto<br/>
+premio<br/>
+ <br/>
+/Movimientos<br/>
+/Movimiento<br/>
+tVal/ tipoval  (solo cambio la etiqueta)<br/>
+ <br/>
+/ManejoCuenta<br/>
+Aplica<br/>
+ <br/>
+/PrincipalesIndicadores<br/>
+/línea<br/>
+descripcion   <br/>
+valuacionCorte      <br/>
+valuacionCorteAnual <br/>
+ 
+  </td>
+                                    <td class="nav reporter"  >            Margarita Arellano
+    </td>
+                                    <td class="nav assignee"  >            Margarita Arellano
+    </td>
+                                    <td class="nav created"  > 23/Jan/15 1:20 PM </td>
+                                    <td class="nav duedate"  >    19/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 2:48 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow45291" rel="45291" data-issuekey="BXMPRJ-33" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-33">BXMPRJ-33</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                ERAS GANANCIA Y GENERACIÓN POR TENENCIA PARA CASA DE BOLSA Y PROMOCIÓN DE SOCIEDADES DE INVERSIÓN Y PROVISIÓN CONTABLE
+    </td>
+                                    <td class="nav description"  >      El Sistema TAS genere un reporte de Tenencia de las Sociedades de Inversión que distribuye la Casa de Bolsa, donde calcule por un factor la ganancia que recibe la Casa de Bolsa de la Operadora de Fondos y otro factor que aplique a los Promotores para su generación, tanto la ganancia de la Casa de Bolsa como la generación del Promotor el Sistema TAS calcule sus provisiones contables (Número de Acciones X Precio de Mercado X Factor).
+  </td>
+                                    <td class="nav reporter"  >            Ana hernandez
+    </td>
+                                    <td class="nav assignee"  >            Arturo Saldivar
+    </td>
+                                    <td class="nav created"  > 22/Oct/13 3:25 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 2:38 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, Gap, Licencia, PruebasD2, TAS-Funds</td>
+            </tr>
+        <tr id="issuerow45538" rel="45538" data-issuekey="BXMPRJ-42" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-42">BXMPRJ-42</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                ERAS CENTROS DE COSTOS
+    </td>
+                                    <td class="nav description"  >      Que el Sistema TAS permita a la Institución ingresar los Centros de Costos que maneja su Sistema Contable, permitiendo al Usuario asociar estos Centros de Costos a Contratos, Promotores y Negociadores, cuando se genere la contabilidad de Mercado de Capitales, Mercado de Dinero, Derivados y Sociedades de Inversión contenga estos Centros de Costos las cuentas Contables asociadas.
+  </td>
+                                    <td class="nav reporter"  >            Ana hernandez
+    </td>
+                                    <td class="nav assignee"  >            Ana hernandez
+    </td>
+                                    <td class="nav created"  > 30/Oct/13 5:26 PM </td>
+                                    <td class="nav duedate"  >    12/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 2:35 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Broker, FSP580, Gap, PruebasD3, SCPC, TAS-Gral</td>
+            </tr>
+        <tr id="issuerow52667" rel="52667" data-issuekey="BXMPRJ-515" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-515">BXMPRJ-515</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Investigating
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Cambios a la Interfaz de Clientes por Bajas y Manejo de Nombre-Apellidos
+    </td>
+                                    <td class="nav description"  >      Se solicitan los siguientes cambios en la interfaz de Clientes:<br/>
+<br/>
+1. Recibir el Nombre del Cliente en los casos de personas físicas, separado en tres variables distintas para evitar que la interfaz tenga que diferenciar nombre y apellidos.<br/>
+Además se necesita que se permitan los valores vacíos o nulos en los apellidos, incluyendo los correspondientes a co-titulares y/o beneficiarios.<br/>
+<br/>
+2. Manejo de Bajas y Modificaciones para datos adicionales del cliente<br/>
+- Direcciones<br/>
+- Co-titulares<br/>
+- Beneficiarios<br/>
+<br/>
+Se deja a continuación el requerimiento de Jesus Villaseñor descrito en el ticket BXMPRJ-434:<br/>
+<br/>
+- 1) Se envia alta de cliente solo con el campo NOMBRE (completo) y de alguna forma TAS esta cargando los datos de Apellido Paterno Materno y Nombre . Se observa que se estan asignado los paternos como maternos y viceversa , tambien que aunque en la mayoria de los casos el corte es correcto esto no pasa siempre. SE SOLICITA CONTEMPLAR EL CAMBIO a peticion separada NOMBRES , APELLIDO1 , APELLIDO2 y aceptar que cualquiera de los apellidos puede venir en blanco. (TAMBIEN EN COTITULARES, BENEFICIARIOS).<br/>
+<br/>
+- 2) En la Interface no se contemplan BAJAS de ningun dato, pero si existen , por ejemplo del CONTRATO y de algunos datos como DIRECCIONES , BENEFICIARIOS , COTITULARES , etc .. como se pretende que se maneje esto ...<br/>
+
+  </td>
+                                    <td class="nav reporter"  >            Cesar Guzmán
+    </td>
+                                    <td class="nav assignee"  >            Christian Ramirez
+    </td>
+                                    <td class="nav created"  > 25/Aug/14 1:32 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 2:25 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    FSP1307, PruebasD2</td>
+            </tr>
+        <tr id="issuerow57248" rel="57248" data-issuekey="BXMPRJ-1250" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1250">BXMPRJ-1250</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Open
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Cierre de fondos cuando caja este cerrada
+    </td>
+                                    <td class="nav description"  >      Se requiere que se permita hacer el cierre de fondos cuando la caja se encuentre cerrada
+  </td>
+                                    <td class="nav reporter"  >            Javier Hernández
+    </td>
+                                    <td class="nav assignee"  >            Gabriela Cedillo
+    </td>
+                                    <td class="nav created"  > 07/Feb/15 1:08 AM </td>
+                                    <td class="nav duedate"  >    25/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 1:48 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    SCPC</td>
+            </tr>
+        <tr id="issuerow56707" rel="56707" data-issuekey="BXMPRJ-1158" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1158">BXMPRJ-1158</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Failed Test
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                SOLICITUD DE AUTORIZACION INNECESARIA
+    </td>
+                                    <td class="nav description"  >      Al momento de revisar si existen órdenes pendientes por autorizar nos encontramos con 3, de las cuales solo una requiere autorización, aparentemente ya que TAS no cuenta son mensajes informativos del por que se requiere autorización.<br/>
+<br/>
+Se adjunta evidencia.
+  </td>
+                                    <td class="nav reporter"  >            Martin Cruz
+    </td>
+                                    <td class="nav assignee"  >            Carmen Méndez
+    </td>
+                                    <td class="nav created"  > 22/Jan/15 10:19 PM </td>
+                                    <td class="nav duedate"  >    19/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 11:25 AM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    CICLO4, SCPC</td>
+            </tr>
+        <tr id="issuerow57080" rel="57080" data-issuekey="BXMPRJ-1207" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1207">BXMPRJ-1207</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >Open
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Reporte Detallada llamadas de Margen DGARW007 
+    </td>
+                                    <td class="nav description"  >      El día 30 de enero de 2015 en una reunión con Juan Carlos Jaques, Elisa Paz, Margarita Arellano y Gerardo Gómez, se determinó que Fiable llevará la administración de las garantías por caución.Por lo anterior se solicita que las garantías por causión ya no se presenten en este reporte.<br/>
+<br/>
+Adicional para este reporte se solicita la siguiente información:<br/>
+<br/>
+1. La columna Aforo viene vacía, Mesa de controles necesita conocer el aforo para asegurar el cálculo, el dato se obtiene en el archivo de Indeval.<br/>
+<br/>
+2. El reporte se requiere complementar con los campos:<br/>
+a. Tipo Valor.<br/>
+b. Calificación/Bursatilidad.<br/>
+c. Monto a Garantizar.<br/>
+<br/>
+Favor de atender el requerimiento<br/>
+
+  </td>
+                                    <td class="nav reporter"  >            Cesar Guzmán
+    </td>
+                                    <td class="nav assignee"  >            Carmen Méndez
+    </td>
+                                    <td class="nav created"  > 03/Feb/15 3:12 PM </td>
+                                    <td class="nav duedate"  >    23/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 11:24 AM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    CICLO4</td>
+            </tr>
+        <tr id="issuerow56756" rel="56756" data-issuekey="BXMPRJ-1159" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1159">BXMPRJ-1159</a>
+</td>
+                                    <td class="nav issuetype"  > Enhancement</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Amortizaciones por Importe y por Títulos. 
+    </td>
+                                    <td class="nav description"  >      Se necesita completar la funcionalidad para realizar las amortizaciones de MC por Importe y por Títulos. <br/>
+Haciendo las afectaciones correspondientes para que se generen las liquidaciones y/o movimientos de vencimiento.<br/>
+<br/>
+Este JIRA es un complemento del JIRA BXMPRJ-688. 
+  </td>
+                                    <td class="nav reporter"  >            Carmen Méndez
+    </td>
+                                    <td class="nav assignee"  >            Carmen Méndez
+    </td>
+                                    <td class="nav created"  > 23/Jan/15 11:07 AM </td>
+                                    <td class="nav duedate"  >    27/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 11:23 AM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    SCPC</td>
+            </tr>
+                    
+            </table>
+
+                    
+
+    <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="13"><font size="1">
+        Generated at Thu Feb 19 12:26:46 EST 2015 by Javier Hernández using JIRA 4.4.5#665-sha1:422aeadac7e4462fb4ae63fce804ff78c4258dd6.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>

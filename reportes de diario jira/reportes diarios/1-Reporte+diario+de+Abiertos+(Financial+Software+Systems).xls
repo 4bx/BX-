@@ -1,0 +1,466 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>1-Reporte diario de Abiertos (Financial Software Systems)</title>
+<style type="text/css">
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#ffffff" height="47">
+        <td colspan="13">
+            <img src="https://support.finsoftware.com/jira/jira-logo-scaled.png" width="170" height="47" border="0" alt="1-Reporte diario de Abiertos (Financial Software Systems)">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            <a href="https://support.finsoftware.com/jira/secure/IssueNavigator.jspa?requestId=13532">1-Reporte diario de Abiertos (Financial Software Systems)</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            Displaying <strong>9</strong> issues at <strong>18/Feb/15 11:04 AM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+    
+                                
+        
+        
+                    <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        
+                            <thead>
+    <tr class="rowHeader">
+
+    
+                                    <th class="colHeaderLink headerrow-issuekey"
+
+                    
+                        >
+                    Key
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-issuetype"
+
+                    
+                        >
+                    Issue Type
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-status"
+
+                    
+                        >
+                    Status
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-priority"
+
+                    
+                        >
+                    Priority
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-summary"
+
+                    
+                        >
+                    Summary
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-description"
+
+                    
+                        >
+                    Description
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-reporter"
+
+                    
+                        >
+                    Reporter
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-assignee"
+
+                    
+                        >
+                    Assignee
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-created"
+
+                    
+                        >
+                    Created
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-duedate"
+
+                    
+                        >
+                    Due Date
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-updated"
+
+                    
+                        >
+                    Updated
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-resolutiondate"
+
+                    
+                        >
+                    Resolved
+                                    </th>
+                        
+                                    <th class="colHeaderLink headerrow-labels"
+
+                    
+                        >
+                    Labels
+                                    </th>
+                                </tr>
+</thead>
+<tbody>
+
+
+            
+            <tr id="issuerow57639" rel="57639" data-issuekey="BXMPRJ-1313" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1313">BXMPRJ-1313</a>
+</td>
+                                    <td class="nav issuetype"  > Question</td>
+                                    <td class="nav status"  >Open
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                POSICION 11217 INCORRECTA ¿?
+    </td>
+                                    <td class="nav description"  >      Se requiere una explicación del por que está cambiando la posición de la cuenta 11217, después de cada operación que realizan los portafolios 11332, 11255 y la 9060, así como también los títulos vendidos en directo a la cuenta 57571 para que de ahí se realicen las garantías a intermediarios (de ser necesario).<br/>
+Se adjunta evidencia
+  </td>
+                                    <td class="nav reporter"  >            Martin Cruz
+    </td>
+                                    <td class="nav assignee"  >            Ivan Torres
+    </td>
+                                    <td class="nav created"  > 17/Feb/15 6:07 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:09 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    CICLO4, D5</td>
+            </tr>
+        <tr id="issuerow57607" rel="57607" data-issuekey="BXMPRJ-1309" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1309">BXMPRJ-1309</a>
+</td>
+                                    <td class="nav issuetype"  > Question</td>
+                                    <td class="nav status"  >Open
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                Posiciones de mercado de dinero que no se presentan el 31 de julio
+    </td>
+                                    <td class="nav description"  >      <br/>
+Se identificaron 4 emisiones (DAIMLER 02714, EDCA 00414, FORD 03014 Y NRF 01414)  que el día 30 de julio estaban en posición de terceros y el día 31  ya no están en posición de los clientes. No se identifican operaciones de venta ni traspasos.<br/>
+<br/>
+Se anexa evidencia y el ejemplo de  movimientos de la emisora DAIMLER 02714
+  </td>
+                                    <td class="nav reporter"  >            Cesar Guzmán
+    </td>
+                                    <td class="nav assignee"  >            Ivan Torres
+    </td>
+                                    <td class="nav created"  > 16/Feb/15 7:37 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 16/Feb/15 7:37 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    CICLO4</td>
+            </tr>
+        <tr id="issuerow57606" rel="57606" data-issuekey="BXMPRJ-1308" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1308">BXMPRJ-1308</a>
+</td>
+                                    <td class="nav issuetype"  > Question</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Aplicacion de traspasos entre mesas
+    </td>
+                                    <td class="nav description"  >      No presenta las operaciones para aplicar entre mesas; Folios 100425, 100424, 100423
+  </td>
+                                    <td class="nav reporter"  >            Agustin Gutierrez
+    </td>
+                                    <td class="nav assignee"  >            Jacqueline Barradas
+    </td>
+                                    <td class="nav created"  > 16/Feb/15 7:02 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 16/Feb/15 7:28 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    </td>
+            </tr>
+        <tr id="issuerow57376" rel="57376" data-issuekey="BXMPRJ-1273" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1273">BXMPRJ-1273</a>
+</td>
+                                    <td class="nav issuetype"  > Question</td>
+                                    <td class="nav status"  >Investigating
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                Se tienen 11342 registros por concepto de Cobro por Administración en el Reporte de Flujo Cambios 
+    </td>
+                                    <td class="nav description"  >      El 09 de Febrero, Prueba día 4 se valida la posición del Reporte de Flujo Cambios la cual debe de estar en blanco al inicio de la operación. Al momento de generar el Reporte este se tardo en mostrar la información porque tenia 11342 movimientos que se cargaron por el concepto Cobro por Administración. Se anexa evidencia 
+  </td>
+                                    <td class="nav reporter"  >            Beatriz Pérez
+    </td>
+                                    <td class="nav assignee"  >            Ivan Torres
+    </td>
+                                    <td class="nav created"  > 10/Feb/15 7:58 PM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 16/Feb/15 7:32 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    CICLO4</td>
+            </tr>
+        <tr id="issuerow57297" rel="57297" data-issuekey="BXMPRJ-1252" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1252">BXMPRJ-1252</a>
+</td>
+                                    <td class="nav issuetype"  > Question</td>
+                                    <td class="nav status"  >Delivered
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Asignacion de Valores_Posicion Fecha valor
+    </td>
+                                    <td class="nav description"  >      El 28/07/2014 se capturo-asigno una CR con BANCO VE POR MAS S.A de BPAG28 IM150903 por 1,000,000 de títulos con fecha de liquidación 01/08/2014 y vencimiento 05/08/2014 (folio 103014). A pesar de que en la posición FV se muestran dichos valores, el sistema no permito la asignación. <br/>
+
+  </td>
+                                    <td class="nav reporter"  >            Agustin Gutierrez
+    </td>
+                                    <td class="nav assignee"  >            Gerardo Gomez
+    </td>
+                                    <td class="nav created"  > 09/Feb/15 9:29 AM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 6:57 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    CICLO4</td>
+            </tr>
+        <tr id="issuerow57089" rel="57089" data-issuekey="BXMPRJ-1214" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-1214">BXMPRJ-1214</a>
+</td>
+                                    <td class="nav issuetype"  > Question</td>
+                                    <td class="nav status"  >Client Response Provided
+</td>
+                                    <td class="nav priority"  >   High
+</td>
+                                    <td class="nav summary"  >                Estado de cuenta 
+    </td>
+                                    <td class="nav description"  >      toda la informcion que presenta  el estado de cuenta esta en ceros
+  </td>
+                                    <td class="nav reporter"  >            Azucena Gudiño
+    </td>
+                                    <td class="nav assignee"  >            Gerardo Gomez
+    </td>
+                                    <td class="nav created"  > 03/Feb/15 7:10 PM </td>
+                                    <td class="nav duedate"  >    24/Feb/15
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 11:11 AM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    PruebasD4, ciclo4</td>
+            </tr>
+        <tr id="issuerow54382" rel="54382" data-issuekey="BXMPRJ-833" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-833">BXMPRJ-833</a>
+</td>
+                                    <td class="nav issuetype"  > Question</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                Layout Signar FECHAS VALOR
+    </td>
+                                    <td class="nav description"  >      LAS COMPRAS Y VENTAS FECHA VALOR NO CUADRAN EN TAS CON RESPECTO A PRODUCCION
+  </td>
+                                    <td class="nav reporter"  >            Javier Hernández
+    </td>
+                                    <td class="nav assignee"  >            German Gomez
+    </td>
+                                    <td class="nav created"  > 23/Oct/14 7:33 PM </td>
+                                    <td class="nav duedate"  >    27/Feb/15
+</td>
+                                    <td class="nav updated"  > 16/Feb/15 7:31 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    PruebasD4, ciclo4</td>
+            </tr>
+        <tr id="issuerow54381" rel="54381" data-issuekey="BXMPRJ-832" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-832">BXMPRJ-832</a>
+</td>
+                                    <td class="nav issuetype"  > Question</td>
+                                    <td class="nav status"  >In Progress
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                layout SIGNAR cambios
+    </td>
+                                    <td class="nav description"  >      la posicion de las divisas que son mismo dia en el layout de Signar estan regsitradas como 24 horas.
+  </td>
+                                    <td class="nav reporter"  >            Javier Hernández
+    </td>
+                                    <td class="nav assignee"  >            German Gomez
+    </td>
+                                    <td class="nav created"  > 23/Oct/14 7:29 PM </td>
+                                    <td class="nav duedate"  >    27/Feb/15
+</td>
+                                    <td class="nav updated"  > 16/Feb/15 7:31 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    CICLO4, PruebasD4</td>
+            </tr>
+        <tr id="issuerow50518" rel="50518" data-issuekey="BXMPRJ-231" class="issuerow         ">
+                                    <td class="nav issuekey"  >
+
+    <a href="https://support.finsoftware.com/jira/browse/BXMPRJ-231">BXMPRJ-231</a>
+</td>
+                                    <td class="nav issuetype"  > Question</td>
+                                    <td class="nav status"  >Client Response Provided
+</td>
+                                    <td class="nav priority"  >   Medium
+</td>
+                                    <td class="nav summary"  >                SI FALTA ALGÚN PRECIO DE LOS FONDOS QUE DISTRIBUYE CB BX+, SOLICITAN QUE NO ABRA EL FONDO EL SIGUIENTE DÍA HÁBIL HASTA QUE EXISTA EL PRECIO
+    </td>
+                                    <td class="nav description"  >      Solicita BX* que en caso de no recibir un precio de los fondos que hoy distrubuye la Casa de Bolsa, el Sistema TAS no permita abrir el fondo en cuestión hasta que no se se suba el precio al sistema, generalmente esta situación se presenta frecuentemente y necesitan que consideremos esta situación en el cierre y aperura del módulo de FONDOS, se les informo que actualmente el Sistema TAS no permite el cierre del módulo si no cargan los precios de los fondos que hoy distribuyen.<br/>
+<br/>
+Les comparto los correos involucrados con el tema,<br/>
+<br/>
+Quedo pendiente.<br/>
+<br/>
+Saludos,<br/>
+José Arturo Saldivar<br/>
+FSS &amp; TAS<br/>
+<br/>
+__________________________________________________________________________________________________________________________________<br/>
+De: Margarita Arellano Reyes [mailto:marellano@vepormas.com.mx] <br/>
+Asunto: RV: REENVIO PRECIOS XLS 28-05-14 INCURSIÓN PRECIO SAURORT<br/>
+ <br/>
+Arturo,<br/>
+ <br/>
+Me puedes indicar que haríamos en TAS , para este escenario en el cual la operadora de sociedades de inversión no reporto el precio en el día en que se tenía que cerrar una operación de fondos, como ves en el texto , se reportó al día siguiente<br/>
+ <br/>
+Quedo pendiente<br/>
+___________________________________________________________________________________________________________________________________<br/>
+De: Juan Carlos Fernandez Hernandez [mailto:jfernandez@vepormas.com.mx] <br/>
+Enviado el: Thursday, 29 de May de 2014 11:29 a.m.<br/>
+Para: Margarita Arellano Reyes; Jesus Villaseñor Cazares; arodriguez@vepormas.com.mx<br/>
+CC: &#39;Valores Ve por Mas&#39;; agutierrez@vepormas.com.mx; mmendeza@vepormas.com.mx; rhernandez@vepormas.com.mx; masanchez@vepormas.com.mx; ahernandez@vepormas.com.mx<br/>
+Asunto: RV: REENVIO PRECIOS XLS 28-05-14 INCURSIÓN PRECIO SAURORT<br/>
+ <br/>
+ESTIMADOS, ACABO DE MODIFICAR EL PRECIO DEL SAURORT, YA QUE EL QUE LLEGO AYER POR LA TARDE NOCHE, EL PRECIO ESTABA EN CEROS, ME ACABAN DE ENVÍAR EL PRECIO CORRECTO (1.015157).<br/>
+ <br/>
+AYER HUBO COMPRA PARA EL CLIENTE 518192, POR LO QUE HAY QUE REPORCESAR PARA QUE ESTE FONDO SE CIERRE Y SE ASIGE DE FORMA CORRECTA.<br/>
+ <br/>
+<br/>
+<br/>
+<br/>
+
+  </td>
+                                    <td class="nav reporter"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav assignee"  >            Juan Carlos Fernández
+    </td>
+                                    <td class="nav created"  > 04/Jun/14 12:43 AM </td>
+                                    <td class="nav duedate"  >    &nbsp;
+</td>
+                                    <td class="nav updated"  > 17/Feb/15 5:18 PM </td>
+                                    <td class="nav resolutiondate"  > &nbsp; </td>
+                                    <td class="nav labels"  >    Gap, PruebasD3</td>
+            </tr>
+                    
+            </table>
+
+                    
+
+    <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="13"><font size="1">
+        Generated at Wed Feb 18 12:04:06 EST 2015 by Javier Hernández using JIRA 4.4.5#665-sha1:422aeadac7e4462fb4ae63fce804ff78c4258dd6.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>

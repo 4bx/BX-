@@ -1,0 +1,11 @@
+persons                                                personas que participan
+mercado                                                tiempo operacion duracion de la prueba X dia operacion - dia natural
+transaccion                                            tiempos muestras
+tiempo operacion  sistema actual (duraccion)           tiempos espera por falta conocimiento
+tiempo operacion sistema tas                           tiempo de prueba x area (mdd,moc)
+horario prueba                                          reporte 
+linea / batch                                          incidencia X
+                                                                  -mercados
+                                                                  -persona
+                                                                  -transaccion
+                                                                  -tiempo ejecucion vs tiempo produccion

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Workspace defaultApplication="4" version="2.4">
+  <Group label="Carga">
+    <Application dependencies="6" externalDependencies="libgre.42x" id="4" label="Carga_jira">
+      <File compilerOptions="--build-rdd" filePath="Body_CargaJira.4gl"/>
+      <File compilerOptions="--build-rdd" filePath="bin/carga_jira.4rp"/>
+      <File filePath="f_carga_jira.4fd"/>
+      <File filePath="MainCargaJira.4gl"/>
+    </Application>
+    <Library id="6" label="Databases">
+      <File filePath="tecnoparque.4dbx"/>
+    </Library>
+  </Group>
+</Workspace>

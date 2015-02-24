@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceViewState version="1.0">
+  <ExpandedNodes>
+    <Node path="/jiras.4pw" type="pm/main-project"/>
+    <Node path="/jiras.4pw/Group_1" type="pm/group"/>
+    <Node path="/jiras.4pw/Group_1/carga_jira" type="pm/application"/>
+    <Node path="/jiras.4pw/Group_1/Databases" type="pm/library"/>
+  </ExpandedNodes>
+  <OpenDocuments>
+    <Document filePath="genaro/MainCargaJira.4gl" locator="" module="mod-ce3"/>
+    <Document filePath="genaro/f_carga_jira.4fd" locator="" module="mod-fd"/>
+    <Document filePath="genaro/tecnoparque.4dbx" locator="" module="mod-db3"/>
+  </OpenDocuments>
+  <CurrentDocument filePath="C:\Users\erodriguez\Desktop\proyectos\BX+\genaro\MainCargaJira.4gl" module="mod-ce3"/>
+</WorkspaceViewState>

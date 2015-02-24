@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceViewState version="1.0">
+  <ExpandedNodes>
+    <Node path="/carga_jira.4pw" type="pm/main-project"/>
+    <Node path="/carga_jira.4pw/Carga" type="pm/group"/>
+    <Node path="/carga_jira.4pw/Carga/Carga_jira" type="pm/application"/>
+  </ExpandedNodes>
+  <OpenDocuments>
+    <Document filePath="MainCargaJira.4gl" locator="" module="mod-ce3"/>
+    <Document filePath="Body_CargaJira.4gl" locator="" module="mod-ce3"/>
+    <Document filePath="bin/carga_jira.4rp" locator="" module="mod-rw"/>
+  </OpenDocuments>
+  <CurrentDocument filePath="C:\Users\erodriguez\Desktop\proyectos\BX+\genaro\MainCargaJira.4gl" module="mod-ce3"/>
+</WorkspaceViewState>

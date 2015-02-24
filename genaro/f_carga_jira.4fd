@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm gstVersion="22800" name="ManagedForm" uid="{dbb5d25e-e004-4088-8242-99bc0c802c85}">
+  <AGSettings/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{ff98e933-d939-44f2-bb74-3ca9d28aa262}" where="">
+    <RecordField colName="" fieldIdRef="1" name="ruta" sqlTabName="" table_alias_name="" uid="{49b34cca-cf36-475a-8bd0-05f5b8afc915}"/>
+    <RecordField colName="" fieldIdRef="2" name="FFRuta" sqlTabName="" table_alias_name="" uid="{b5ba6e21-6311-4fb6-a45a-57114a6f2ca8}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="Form" text="Form">
+    <HBox gridHeight="15" gridWidth="54" name="HBox1" posX="3" posY="2">
+      <VBox gridHeight="15" gridWidth="50" name="VBox1" posX="2" posY="0">
+        <Grid gridHeight="13" gridWidth="50" name="Grid1" posX="0" posY="1">
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="1" gridHeight="1" gridWidth="22" name="ruta" posX="4" posY="4" rowCount="" sqlTabName="" stepX="" stepY="" tabIndex="2" table_alias_name="" title="Edit1" widget="Edit"/>
+          <Button gridHeight="1" gridWidth="10" name="bt_ruta" posX="28" posY="4" tabIndex="1" text="..."/>
+          <FFLabel aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="" columnCount="" fieldId="2" gridHeight="1" gridWidth="34" name="FFRuta" posX="4" posY="6" rowCount="" sqlTabName="" stepX="" stepY="" table_alias_name="" title="FFLabel1" widget="FFLabel"/>
+        </Grid>
+      </VBox>
+    </HBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0ADkAYgAzADQAYwBjAGEALQBjAGYAMwA2AC0ANAA3ADUAYQAtADgAYgBkADAALQAwADUAZgA1AGIAOABhAGYAYwA5ADEANQB9QCQAAAAAAABAQwAAAAAAAAAAAAAAAAAAAQAAAEwAewBiADUAYgBhADYAZQAyADEALQA2ADMAMQAxAC0ANABmAGIANgAtAGEANAA1AGEALQA1ADcAMQAxADQAYQA2AGYAMgBjAGEAOAB9QCQAAAAAAABAToAAAAAAAAAAAAAAAAAAAQAAAEwAewBmAGYAOQA4AGUAOQAzADMALQBkADkAMwA5AC0ANAA0AGYAMgAtAGIAYgA3ADQALQAzAGMAYQA5AGQAMgA4AGEAYQAyADYAMgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceDatabase fileContentsEncoding="CP1252" options="3" version="2.0">
+<File m="Body_CargaJira" n="Body_CargaJira.4gl" ts="20150223184021672">
+<Fct c="10" el="237" l="213" n="f_agregarRegistro(r_carga RECORD)" t="F"/>
+<Fct c="8" el="282" l="273" n="jiras_completo(ar_registros RECORD)" t="R"/>
+<Fct c="11" el="127" l="83" n="f_validaRegistro(r_validacion RECORD)" t="F"/>
+<Fct c="11" el="21" l="10" n="f_ejecutar_carga(ruta STRING)" t="F">
+<Call c="8" l="19" n="FGL_WINMESSAGE" p="" t="F"/>
+</Fct>
+<Fct c="10" el="271" l="240" n="reporte()" t="F">
+<Call c="4" l="255" n="fgl_report_loadCurrentSettings" p="" t="F"/>
+<Call c="10" l="256" n="fgl_report_selectDevice" p="" t="F"/>
+<Call c="10" l="257" n="fgl_report_configureXLSDevice" p="" t="F"/>
+<Call c="10" l="258" n="fgl_report_setOutputFileName" p="" t="F"/>
+<Call c="10" l="259" n="fgl_report_selectPreview" p="" t="F"/>
+<Call c="14" l="260" n="fgl_report_commitCurrentSettings" p="" t="F"/>
+<Call c="14" l="265" n="jiras_completo" t="R"/>
+<Call c="26" l="267" n="jiras_completo" t="R"/>
+<Call c="15" l="269" n="jiras_completo" t="R"/>
+</Fct>
+<Fct c="11" el="8" l="3" n="f_recuperar_ruta()" t="F">
+<Call c="8" l="5" n="WINOPENFILE" p="" t="F"/>
+</Fct>
+<Fct c="10" el="140" l="129" n="f_usuarioValidacion(assignee VARCHAR(45))" t="F"/>
+<Fct c="10" el="81" l="77" n="f_cargaRegistro(r_carga RECORD)" t="F"/>
+<Fct c="10" el="75" l="23" n="f_jira_nuevo()" t="F">
+<Call c="10" l="37" n="f_validaRegistro" t="F"/>
+<Call c="14" l="57" n="f_agregarRegistro" t="F"/>
+<Call c="14" l="65" n="f_modificaRegistro" t="F"/>
+<Call c="10" l="71" n="FGL_WINMESSAGE" p="" t="F"/>
+<Call c="10" l="73" n="FGL_WINMESSAGE" p="" t="F"/>
+</Fct>
+<Fct c="10" el="211" l="142" n="f_modificaRegistro(r_carga RECORD)" t="F"/>
+</File>
+<File m="MainCargaJira" n="MainCargaJira.4gl" ts="20150223183706344">
+<Fct c="1" el="31" l="1" n="main()" t="F">
+<Call c="12" l="16" n="f_recuperar_ruta" p="Body_CargaJira.4gl" t="F"/>
+<Call c="14" l="20" n="f_ejecutar_carga" p="Body_CargaJira.4gl" t="F"/>
+<Call c="12" l="22" n="reporte" p="Body_CargaJira.4gl" t="F"/>
+<Call c="12" l="25" n="f_jira_nuevo" p="Body_CargaJira.4gl" t="F"/>
+</Fct>
+</File>
+<File m="tecnoparque_dbxconstraints" n="tecnoparque_dbxconstraints.4gl" ts="20150223173507314">
+<Fct c="17" el="2506" l="2497" n="tecnoparque_dbxconstraints_actividad_jira_raiz_wa_checkColumnConstraints(p_raiz_wa INTEGER)" t="F"/>
+<Fct c="17" el="1199" l="1190" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_autorizacion_checkColumnConstraints(p_dias_autorizacion INTEGER)" t="F"/>
+<Fct c="17" el="1875" l="1844" n="tecnoparque_dbxconstraints_actividad_jira_primary_checkUniqueConstraint(p_forUpdate BOOLEAN,p_key RECORD)" t="F">
+<Call c="10" l="1871" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="1180" l="1171" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_autorizacion_checkColumnConstraints(p_fecha_autorizacion INTEGER)" t="F"/>
+<Fct c="17" el="2487" l="2478" n="tecnoparque_dbxconstraints_actividad_jira_dias_autorizacion_checkColumnConstraints(p_dias_autorizacion INTEGER)" t="F"/>
+<Fct c="17" el="498" l="489" n="tecnoparque_dbxconstraints_h_carga_jira_hora_carga_checkColumnConstraints(p_hora_carga INTEGER)" t="F"/>
+<Fct c="17" el="1161" l="1152" n="tecnoparque_dbxconstraints_h_actividad_jira_sow3_checkColumnConstraints(p_sow3 INTEGER)" t="F"/>
+<Fct c="17" el="2468" l="2459" n="tecnoparque_dbxconstraints_actividad_jira_fecha_autorizacion_checkColumnConstraints(p_fecha_autorizacion INTEGER)" t="F"/>
+<Fct c="17" el="479" l="470" n="tecnoparque_dbxconstraints_h_carga_jira_fecha_carga_checkColumnConstraints(p_fecha_carga INTEGER)" t="F"/>
+<Fct c="17" el="1142" l="1133" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_reincidencia_4_checkColumnConstraints(p_fecha_reincidencia_4 INTEGER)" t="F"/>
+<Fct c="17" el="1834" l="1752" n="tecnoparque_dbxconstraints_actividad_jira_checkTableConstraints(p_forUpdate BOOLEAN,p_data RECORD)" t="F">
+<Call c="8" l="1763" n="tecnoparque_dbxconstraints_actividad_jira_c_status_checkColumnConstraints" t="F"/>
+<Call c="8" l="1764" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1765" n="tecnoparque_dbxconstraints_actividad_jira_paso_checkColumnConstraints" t="F"/>
+<Call c="8" l="1766" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1767" n="tecnoparque_dbxconstraints_actividad_jira_key__checkColumnConstraints" t="F"/>
+<Call c="8" l="1768" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1769" n="tecnoparque_dbxconstraints_actividad_jira_issue_type_checkColumnConstraints" t="F"/>
+<Call c="8" l="1770" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1771" n="tecnoparque_dbxconstraints_actividad_jira_status_checkColumnConstraints" t="F"/>
+<Call c="8" l="1772" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1773" n="tecnoparque_dbxconstraints_actividad_jira_priority_checkColumnConstraints" t="F"/>
+<Call c="8" l="1774" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1775" n="tecnoparque_dbxconstraints_actividad_jira_summary_checkColumnConstraints" t="F"/>
+<Call c="8" l="1776" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1777" n="tecnoparque_dbxconstraints_actividad_jira_description_checkColumnConstraints" t="F"/>
+<Call c="8" l="1778" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1779" n="tecnoparque_dbxconstraints_actividad_jira_reporter_checkColumnConstraints" t="F"/>
+<Call c="8" l="1780" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1781" n="tecnoparque_dbxconstraints_actividad_jira_assignee_checkColumnConstraints" t="F"/>
+<Call c="8" l="1782" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1783" n="tecnoparque_dbxconstraints_actividad_jira_fecha_del_dia_checkColumnConstraints" t="F"/>
+<Call c="8" l="1784" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1785" n="tecnoparque_dbxconstraints_actividad_jira_fecha_creacion_created_checkColumnConstraints" t="F"/>
+<Call c="8" l="1786" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1787" n="tecnoparque_dbxconstraints_actividad_jira_fecha_inicio_checkColumnConstraints" t="F"/>
+<Call c="8" l="1788" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1789" n="tecnoparque_dbxconstraints_actividad_jira_dias_transcurridos_al_dia_checkColumnConstraints" t="F"/>
+<Call c="8" l="1790" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1791" n="tecnoparque_dbxconstraints_actividad_jira_fecha_prometida__vs_ns_checkColumnConstraints" t="F"/>
+<Call c="8" l="1792" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1793" n="tecnoparque_dbxconstraints_actividad_jira_fecha_prometida__due_date_checkColumnConstraints" t="F"/>
+<Call c="8" l="1794" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1795" n="tecnoparque_dbxconstraints_actividad_jira_dias_ret_vs_f_prom_ns_checkColumnConstraints" t="F"/>
+<Call c="8" l="1796" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1797" n="tecnoparque_dbxconstraints_actividad_jira_dias_ret_vs_f_prom_due_date_checkColumnConstraints" t="F"/>
+<Call c="8" l="1798" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1799" n="tecnoparque_dbxconstraints_actividad_jira_dias_brecha_checkColumnConstraints" t="F"/>
+<Call c="8" l="1800" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1801" n="tecnoparque_dbxconstraints_actividad_jira_fecha_cierre_resolved_checkColumnConstraints" t="F"/>
+<Call c="8" l="1802" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1803" n="tecnoparque_dbxconstraints_actividad_jira_cumplio_ns_checkColumnConstraints" t="F"/>
+<Call c="8" l="1804" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1805" n="tecnoparque_dbxconstraints_actividad_jira_cumplio_fp_checkColumnConstraints" t="F"/>
+<Call c="8" l="1806" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1807" n="tecnoparque_dbxconstraints_actividad_jira_dias_efectivos_checkColumnConstraints" t="F"/>
+<Call c="8" l="1808" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1809" n="tecnoparque_dbxconstraints_actividad_jira_labels_checkColumnConstraints" t="F"/>
+<Call c="8" l="1810" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1811" n="tecnoparque_dbxconstraints_actividad_jira_nivel_servicio_checkColumnConstraints" t="F"/>
+<Call c="8" l="1812" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1813" n="tecnoparque_dbxconstraints_actividad_jira_fecha_reincidencia_1_checkColumnConstraints" t="F"/>
+<Call c="8" l="1814" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1815" n="tecnoparque_dbxconstraints_actividad_jira_fecha_reincidencia_2_checkColumnConstraints" t="F"/>
+<Call c="8" l="1816" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1817" n="tecnoparque_dbxconstraints_actividad_jira_fecha_reincidencia_3_checkColumnConstraints" t="F"/>
+<Call c="8" l="1818" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1819" n="tecnoparque_dbxconstraints_actividad_jira_fecha_reincidencia_4_checkColumnConstraints" t="F"/>
+<Call c="8" l="1820" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1821" n="tecnoparque_dbxconstraints_actividad_jira_sow3_checkColumnConstraints" t="F"/>
+<Call c="8" l="1822" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1823" n="tecnoparque_dbxconstraints_actividad_jira_fecha_autorizacion_checkColumnConstraints" t="F"/>
+<Call c="8" l="1824" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1825" n="tecnoparque_dbxconstraints_actividad_jira_dias_autorizacion_checkColumnConstraints" t="F"/>
+<Call c="8" l="1826" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1827" n="tecnoparque_dbxconstraints_actividad_jira_raiz_wa_checkColumnConstraints" t="F"/>
+<Call c="8" l="1828" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1830" n="tecnoparque_dbxconstraints_actividad_jira_primary_checkUniqueConstraint" t="F"/>
+<Call c="8" l="1831" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="2449" l="2440" n="tecnoparque_dbxconstraints_actividad_jira_sow3_checkColumnConstraints(p_sow3 INTEGER)" t="F"/>
+<Fct c="17" el="460" l="451" n="tecnoparque_dbxconstraints_h_carga_jira_labels_checkColumnConstraints(p_labels INTEGER)" t="F"/>
+<Fct c="17" el="1123" l="1114" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_reincidencia_3_checkColumnConstraints(p_fecha_reincidencia_3 INTEGER)" t="F"/>
+<Fct c="17" el="2430" l="2421" n="tecnoparque_dbxconstraints_actividad_jira_fecha_reincidencia_4_checkColumnConstraints(p_fecha_reincidencia_4 INTEGER)" t="F"/>
+<Fct c="17" el="441" l="432" n="tecnoparque_dbxconstraints_h_carga_jira_resolved_checkColumnConstraints(p_resolved INTEGER)" t="F"/>
+<Fct c="17" el="1742" l="1733" n="tecnoparque_dbxconstraints_carga_jira_hora_carga_checkColumnConstraints(p_hora_carga INTEGER)" t="F"/>
+<Fct c="17" el="1104" l="1095" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_reincidencia_2_checkColumnConstraints(p_fecha_reincidencia_2 INTEGER)" t="F"/>
+<Fct c="17" el="2411" l="2402" n="tecnoparque_dbxconstraints_actividad_jira_fecha_reincidencia_3_checkColumnConstraints(p_fecha_reincidencia_3 INTEGER)" t="F"/>
+<Fct c="17" el="422" l="413" n="tecnoparque_dbxconstraints_h_carga_jira_updated_checkColumnConstraints(p_updated INTEGER)" t="F"/>
+<Fct c="17" el="1723" l="1714" n="tecnoparque_dbxconstraints_carga_jira_fecha_carga_checkColumnConstraints(p_fecha_carga INTEGER)" t="F"/>
+<Fct c="17" el="1085" l="1076" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_reincidencia_1_checkColumnConstraints(p_fecha_reincidencia_1 INTEGER)" t="F"/>
+<Fct c="17" el="2392" l="2383" n="tecnoparque_dbxconstraints_actividad_jira_fecha_reincidencia_2_checkColumnConstraints(p_fecha_reincidencia_2 INTEGER)" t="F"/>
+<Fct c="17" el="403" l="394" n="tecnoparque_dbxconstraints_h_carga_jira_due_date_checkColumnConstraints(p_due_date INTEGER)" t="F"/>
+<Fct c="17" el="1704" l="1695" n="tecnoparque_dbxconstraints_carga_jira_labels_checkColumnConstraints(p_labels INTEGER)" t="F"/>
+<Fct c="17" el="1066" l="1057" n="tecnoparque_dbxconstraints_h_actividad_jira_nivel_servicio_checkColumnConstraints(p_nivel_servicio INTEGER)" t="F"/>
+<Fct c="17" el="2373" l="2364" n="tecnoparque_dbxconstraints_actividad_jira_fecha_reincidencia_1_checkColumnConstraints(p_fecha_reincidencia_1 INTEGER)" t="F"/>
+<Fct c="17" el="384" l="375" n="tecnoparque_dbxconstraints_h_carga_jira_created_checkColumnConstraints(p_created INTEGER)" t="F"/>
+<Fct c="17" el="1685" l="1676" n="tecnoparque_dbxconstraints_carga_jira_resolved_checkColumnConstraints(p_resolved INTEGER)" t="F"/>
+<Fct c="17" el="1047" l="1038" n="tecnoparque_dbxconstraints_h_actividad_jira_labels_checkColumnConstraints(p_labels INTEGER)" t="F"/>
+<Fct c="17" el="2354" l="2345" n="tecnoparque_dbxconstraints_actividad_jira_nivel_servicio_checkColumnConstraints(p_nivel_servicio INTEGER)" t="F"/>
+<Fct c="17" el="365" l="356" n="tecnoparque_dbxconstraints_h_carga_jira_assignee_checkColumnConstraints(p_assignee INTEGER)" t="F"/>
+<Fct c="17" el="1666" l="1657" n="tecnoparque_dbxconstraints_carga_jira_updated_checkColumnConstraints(p_updated INTEGER)" t="F"/>
+<Fct c="17" el="2335" l="2326" n="tecnoparque_dbxconstraints_actividad_jira_labels_checkColumnConstraints(p_labels INTEGER)" t="F"/>
+<Fct c="17" el="1028" l="1019" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_efectivos_checkColumnConstraints(p_dias_efectivos INTEGER)" t="F"/>
+<Fct c="17" el="346" l="337" n="tecnoparque_dbxconstraints_h_carga_jira_reporter_checkColumnConstraints(p_reporter INTEGER)" t="F"/>
+<Fct c="17" el="1647" l="1638" n="tecnoparque_dbxconstraints_carga_jira_due_date_checkColumnConstraints(p_due_date INTEGER)" t="F"/>
+<Fct c="17" el="2316" l="2307" n="tecnoparque_dbxconstraints_actividad_jira_dias_efectivos_checkColumnConstraints(p_dias_efectivos INTEGER)" t="F"/>
+<Fct c="17" el="1009" l="1000" n="tecnoparque_dbxconstraints_h_actividad_jira_cumplio_fp_checkColumnConstraints(p_cumplio_fp INTEGER)" t="F"/>
+<Fct c="17" el="327" l="318" n="tecnoparque_dbxconstraints_h_carga_jira_description_checkColumnConstraints(p_description INTEGER)" t="F"/>
+<Fct c="17" el="1628" l="1619" n="tecnoparque_dbxconstraints_carga_jira_created_checkColumnConstraints(p_created INTEGER)" t="F"/>
+<Fct c="17" el="2297" l="2288" n="tecnoparque_dbxconstraints_actividad_jira_cumplio_fp_checkColumnConstraints(p_cumplio_fp INTEGER)" t="F"/>
+<Fct c="17" el="990" l="981" n="tecnoparque_dbxconstraints_h_actividad_jira_cumplio_ns_checkColumnConstraints(p_cumplio_ns INTEGER)" t="F"/>
+<Fct c="17" el="308" l="299" n="tecnoparque_dbxconstraints_h_carga_jira_summary_checkColumnConstraints(p_summary INTEGER)" t="F"/>
+<Fct c="17" el="1609" l="1600" n="tecnoparque_dbxconstraints_carga_jira_assignee_checkColumnConstraints(p_assignee INTEGER)" t="F"/>
+<Fct c="17" el="2278" l="2269" n="tecnoparque_dbxconstraints_actividad_jira_cumplio_ns_checkColumnConstraints(p_cumplio_ns INTEGER)" t="F"/>
+<Fct c="17" el="971" l="962" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_cierre_resolved_checkColumnConstraints(p_fecha_cierre_resolved INTEGER)" t="F"/>
+<Fct c="17" el="289" l="280" n="tecnoparque_dbxconstraints_h_carga_jira_priority_checkColumnConstraints(p_priority INTEGER)" t="F"/>
+<Fct c="17" el="1590" l="1581" n="tecnoparque_dbxconstraints_carga_jira_reporter_checkColumnConstraints(p_reporter INTEGER)" t="F"/>
+<Fct c="17" el="2259" l="2250" n="tecnoparque_dbxconstraints_actividad_jira_fecha_cierre_resolved_checkColumnConstraints(p_fecha_cierre_resolved INTEGER)" t="F"/>
+<Fct c="17" el="952" l="943" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_brecha_checkColumnConstraints(p_dias_brecha INTEGER)" t="F"/>
+<Fct c="17" el="270" l="261" n="tecnoparque_dbxconstraints_h_carga_jira_status_checkColumnConstraints(p_status INTEGER)" t="F"/>
+<Fct c="17" el="1571" l="1562" n="tecnoparque_dbxconstraints_carga_jira_description_checkColumnConstraints(p_description INTEGER)" t="F"/>
+<Fct c="17" el="2240" l="2231" n="tecnoparque_dbxconstraints_actividad_jira_dias_brecha_checkColumnConstraints(p_dias_brecha INTEGER)" t="F"/>
+<Fct c="17" el="933" l="924" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_ret_vs_f_prom_due_date_checkColumnConstraints(p_dias_ret_vs_f_prom_due_date INTEGER)" t="F"/>
+<Fct c="17" el="251" l="242" n="tecnoparque_dbxconstraints_h_carga_jira_issue_type_checkColumnConstraints(p_issue_type INTEGER)" t="F"/>
+<Fct c="17" el="1552" l="1543" n="tecnoparque_dbxconstraints_carga_jira_summary_checkColumnConstraints(p_summary INTEGER)" t="F"/>
+<Fct c="17" el="2221" l="2212" n="tecnoparque_dbxconstraints_actividad_jira_dias_ret_vs_f_prom_due_date_checkColumnConstraints(p_dias_ret_vs_f_prom_due_date INTEGER)" t="F"/>
+<Fct c="17" el="914" l="905" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_ret_vs_f_prom_ns_checkColumnConstraints(p_dias_ret_vs_f_prom_ns INTEGER)" t="F"/>
+<Fct c="17" el="232" l="223" n="tecnoparque_dbxconstraints_h_carga_jira_key_checkColumnConstraints(p_key INTEGER)" t="F"/>
+<Fct c="17" el="1533" l="1524" n="tecnoparque_dbxconstraints_carga_jira_priority_checkColumnConstraints(p_priority INTEGER)" t="F"/>
+<Fct c="17" el="2202" l="2193" n="tecnoparque_dbxconstraints_actividad_jira_dias_ret_vs_f_prom_ns_checkColumnConstraints(p_dias_ret_vs_f_prom_ns INTEGER)" t="F"/>
+<Fct c="17" el="895" l="886" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_prometida__due_date_checkColumnConstraints(p_fecha_prometida__due_date INTEGER)" t="F"/>
+<Fct c="17" el="213" l="204" n="tecnoparque_dbxconstraints_h_carga_jira_id_jira_checkColumnConstraints(p_id_jira INTEGER)" t="F"/>
+<Fct c="17" el="1514" l="1505" n="tecnoparque_dbxconstraints_carga_jira_status__checkColumnConstraints(p_status_ INTEGER)" t="F"/>
+<Fct c="17" el="2183" l="2174" n="tecnoparque_dbxconstraints_actividad_jira_fecha_prometida__due_date_checkColumnConstraints(p_fecha_prometida__due_date INTEGER)" t="F"/>
+<Fct c="17" el="876" l="867" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_prometida__vs_ns_checkColumnConstraints(p_fecha_prometida__vs_ns INTEGER)" t="F"/>
+<Fct c="17" el="194" l="149" n="tecnoparque_dbxconstraints_h_carga_jira_checkTableConstraints(p_forUpdate BOOLEAN,p_data RECORD)" t="F">
+<Call c="8" l="160" n="tecnoparque_dbxconstraints_h_carga_jira_id_jira_checkColumnConstraints" t="F"/>
+<Call c="8" l="161" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="162" n="tecnoparque_dbxconstraints_h_carga_jira_key_checkColumnConstraints" t="F"/>
+<Call c="8" l="163" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="164" n="tecnoparque_dbxconstraints_h_carga_jira_issue_type_checkColumnConstraints" t="F"/>
+<Call c="8" l="165" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="166" n="tecnoparque_dbxconstraints_h_carga_jira_status_checkColumnConstraints" t="F"/>
+<Call c="8" l="167" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="168" n="tecnoparque_dbxconstraints_h_carga_jira_priority_checkColumnConstraints" t="F"/>
+<Call c="8" l="169" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="170" n="tecnoparque_dbxconstraints_h_carga_jira_summary_checkColumnConstraints" t="F"/>
+<Call c="8" l="171" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="172" n="tecnoparque_dbxconstraints_h_carga_jira_description_checkColumnConstraints" t="F"/>
+<Call c="8" l="173" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="174" n="tecnoparque_dbxconstraints_h_carga_jira_reporter_checkColumnConstraints" t="F"/>
+<Call c="8" l="175" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="176" n="tecnoparque_dbxconstraints_h_carga_jira_assignee_checkColumnConstraints" t="F"/>
+<Call c="8" l="177" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="178" n="tecnoparque_dbxconstraints_h_carga_jira_created_checkColumnConstraints" t="F"/>
+<Call c="8" l="179" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="180" n="tecnoparque_dbxconstraints_h_carga_jira_due_date_checkColumnConstraints" t="F"/>
+<Call c="8" l="181" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="182" n="tecnoparque_dbxconstraints_h_carga_jira_updated_checkColumnConstraints" t="F"/>
+<Call c="8" l="183" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="184" n="tecnoparque_dbxconstraints_h_carga_jira_resolved_checkColumnConstraints" t="F"/>
+<Call c="8" l="185" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="186" n="tecnoparque_dbxconstraints_h_carga_jira_labels_checkColumnConstraints" t="F"/>
+<Call c="8" l="187" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="188" n="tecnoparque_dbxconstraints_h_carga_jira_fecha_carga_checkColumnConstraints" t="F"/>
+<Call c="8" l="189" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="190" n="tecnoparque_dbxconstraints_h_carga_jira_hora_carga_checkColumnConstraints" t="F"/>
+<Call c="8" l="191" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="1495" l="1486" n="tecnoparque_dbxconstraints_carga_jira_issue_type_checkColumnConstraints(p_issue_type INTEGER)" t="F"/>
+<Fct c="17" el="2164" l="2155" n="tecnoparque_dbxconstraints_actividad_jira_fecha_prometida__vs_ns_checkColumnConstraints(p_fecha_prometida__vs_ns INTEGER)" t="F"/>
+<Fct c="17" el="857" l="848" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_transcurridos_al_dia_checkColumnConstraints(p_dias_transcurridos_al_dia INTEGER)" t="F"/>
+<Fct c="17" el="1476" l="1467" n="tecnoparque_dbxconstraints_carga_jira_key__checkColumnConstraints(p_key_ INTEGER)" t="F"/>
+<Fct c="17" el="139" l="126" n="tecnoparque_dbxconstraints_usuarios_c_empresa_checkColumnConstraints(p_c_empresa INTEGER)" t="F">
+<Call c="10" l="135" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="2145" l="2136" n="tecnoparque_dbxconstraints_actividad_jira_dias_transcurridos_al_dia_checkColumnConstraints(p_dias_transcurridos_al_dia INTEGER)" t="F"/>
+<Fct c="17" el="838" l="829" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_inicio_checkColumnConstraints(p_fecha_inicio INTEGER)" t="F"/>
+<Fct c="17" el="1457" l="1444" n="tecnoparque_dbxconstraints_carga_jira_id_jira_checkColumnConstraints(p_id_jira INTEGER)" t="F">
+<Call c="10" l="1453" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="116" l="103" n="tecnoparque_dbxconstraints_usuarios_nombre_checkColumnConstraints(p_nombre INTEGER)" t="F">
+<Call c="10" l="112" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="2126" l="2117" n="tecnoparque_dbxconstraints_actividad_jira_fecha_inicio_checkColumnConstraints(p_fecha_inicio INTEGER)" t="F"/>
+<Fct c="17" el="819" l="810" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_creacion_created_checkColumnConstraints(p_fecha_creacion_created INTEGER)" t="F"/>
+<Fct c="17" el="1434" l="1403" n="tecnoparque_dbxconstraints_carga_jira_primary_checkUniqueConstraint(p_forUpdate BOOLEAN,p_key RECORD)" t="F">
+<Call c="10" l="1430" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="93" l="59" n="tecnoparque_dbxconstraints_usuarios_primary_checkUniqueConstraint(p_forUpdate BOOLEAN,p_key RECORD)" t="F">
+<Call c="10" l="89" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="2107" l="2098" n="tecnoparque_dbxconstraints_actividad_jira_fecha_creacion_created_checkColumnConstraints(p_fecha_creacion_created INTEGER)" t="F"/>
+<Fct c="17" el="800" l="791" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_del_dia_checkColumnConstraints(p_fecha_del_dia INTEGER)" t="F"/>
+<Fct c="17" el="2088" l="2079" n="tecnoparque_dbxconstraints_actividad_jira_fecha_del_dia_checkColumnConstraints(p_fecha_del_dia INTEGER)" t="F"/>
+<Fct c="17" el="781" l="772" n="tecnoparque_dbxconstraints_h_actividad_jira_assignee_checkColumnConstraints(p_assignee INTEGER)" t="F"/>
+<Fct c="17" el="2069" l="2060" n="tecnoparque_dbxconstraints_actividad_jira_assignee_checkColumnConstraints(p_assignee INTEGER)" t="F"/>
+<Fct c="17" el="762" l="753" n="tecnoparque_dbxconstraints_h_actividad_jira_reporter_checkColumnConstraints(p_reporter INTEGER)" t="F"/>
+<Fct c="17" el="1393" l="1345" n="tecnoparque_dbxconstraints_carga_jira_checkTableConstraints(p_forUpdate BOOLEAN,p_data RECORD)" t="F">
+<Call c="8" l="1356" n="tecnoparque_dbxconstraints_carga_jira_id_jira_checkColumnConstraints" t="F"/>
+<Call c="8" l="1357" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1358" n="tecnoparque_dbxconstraints_carga_jira_key__checkColumnConstraints" t="F"/>
+<Call c="8" l="1359" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1360" n="tecnoparque_dbxconstraints_carga_jira_issue_type_checkColumnConstraints" t="F"/>
+<Call c="8" l="1361" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1362" n="tecnoparque_dbxconstraints_carga_jira_status__checkColumnConstraints" t="F"/>
+<Call c="8" l="1363" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1364" n="tecnoparque_dbxconstraints_carga_jira_priority_checkColumnConstraints" t="F"/>
+<Call c="8" l="1365" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1366" n="tecnoparque_dbxconstraints_carga_jira_summary_checkColumnConstraints" t="F"/>
+<Call c="8" l="1367" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1368" n="tecnoparque_dbxconstraints_carga_jira_description_checkColumnConstraints" t="F"/>
+<Call c="8" l="1369" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1370" n="tecnoparque_dbxconstraints_carga_jira_reporter_checkColumnConstraints" t="F"/>
+<Call c="8" l="1371" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1372" n="tecnoparque_dbxconstraints_carga_jira_assignee_checkColumnConstraints" t="F"/>
+<Call c="8" l="1373" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1374" n="tecnoparque_dbxconstraints_carga_jira_created_checkColumnConstraints" t="F"/>
+<Call c="8" l="1375" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1376" n="tecnoparque_dbxconstraints_carga_jira_due_date_checkColumnConstraints" t="F"/>
+<Call c="8" l="1377" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1378" n="tecnoparque_dbxconstraints_carga_jira_updated_checkColumnConstraints" t="F"/>
+<Call c="8" l="1379" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1380" n="tecnoparque_dbxconstraints_carga_jira_resolved_checkColumnConstraints" t="F"/>
+<Call c="8" l="1381" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1382" n="tecnoparque_dbxconstraints_carga_jira_labels_checkColumnConstraints" t="F"/>
+<Call c="8" l="1383" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1384" n="tecnoparque_dbxconstraints_carga_jira_fecha_carga_checkColumnConstraints" t="F"/>
+<Call c="8" l="1385" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1386" n="tecnoparque_dbxconstraints_carga_jira_hora_carga_checkColumnConstraints" t="F"/>
+<Call c="8" l="1387" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1389" n="tecnoparque_dbxconstraints_carga_jira_primary_checkUniqueConstraint" t="F"/>
+<Call c="8" l="1390" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="2050" l="2041" n="tecnoparque_dbxconstraints_actividad_jira_reporter_checkColumnConstraints(p_reporter INTEGER)" t="F"/>
+<Fct c="17" el="743" l="734" n="tecnoparque_dbxconstraints_h_actividad_jira_description_checkColumnConstraints(p_description INTEGER)" t="F"/>
+<Fct c="17" el="49" l="29" n="tecnoparque_dbxconstraints_usuarios_checkTableConstraints(p_forUpdate BOOLEAN,p_data RECORD)" t="F">
+<Call c="8" l="40" n="tecnoparque_dbxconstraints_usuarios_nombre_checkColumnConstraints" t="F"/>
+<Call c="8" l="41" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="42" n="tecnoparque_dbxconstraints_usuarios_c_empresa_checkColumnConstraints" t="F"/>
+<Call c="8" l="43" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="45" n="tecnoparque_dbxconstraints_usuarios_primary_checkUniqueConstraint" t="F"/>
+<Call c="8" l="46" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="2031" l="2022" n="tecnoparque_dbxconstraints_actividad_jira_description_checkColumnConstraints(p_description INTEGER)" t="F"/>
+<Fct c="17" el="724" l="715" n="tecnoparque_dbxconstraints_h_actividad_jira_summary_checkColumnConstraints(p_summary INTEGER)" t="F"/>
+<Fct c="17" el="1335" l="1322" n="tecnoparque_dbxconstraints_empresas_empresa_checkColumnConstraints(p_empresa INTEGER)" t="F">
+<Call c="10" l="1331" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="2012" l="2003" n="tecnoparque_dbxconstraints_actividad_jira_summary_checkColumnConstraints(p_summary INTEGER)" t="F"/>
+<Fct c="17" el="705" l="696" n="tecnoparque_dbxconstraints_h_actividad_jira_priority_checkColumnConstraints(p_priority INTEGER)" t="F"/>
+<Fct c="17" el="1312" l="1299" n="tecnoparque_dbxconstraints_empresas_c_empresa_checkColumnConstraints(p_c_empresa INTEGER)" t="F">
+<Call c="10" l="1308" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="1993" l="1984" n="tecnoparque_dbxconstraints_actividad_jira_priority_checkColumnConstraints(p_priority INTEGER)" t="F"/>
+<Fct c="17" el="686" l="677" n="tecnoparque_dbxconstraints_h_actividad_jira_status_checkColumnConstraints(p_status INTEGER)" t="F"/>
+<Fct c="17" el="1289" l="1258" n="tecnoparque_dbxconstraints_empresas_primary_checkUniqueConstraint(p_forUpdate BOOLEAN,p_key RECORD)" t="F">
+<Call c="10" l="1285" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="1974" l="1965" n="tecnoparque_dbxconstraints_actividad_jira_status_checkColumnConstraints(p_status INTEGER)" t="F"/>
+<Fct c="17" el="667" l="658" n="tecnoparque_dbxconstraints_h_actividad_jira_issue_type_checkColumnConstraints(p_issue_type INTEGER)" t="F"/>
+<Fct c="17" el="1955" l="1946" n="tecnoparque_dbxconstraints_actividad_jira_issue_type_checkColumnConstraints(p_issue_type INTEGER)" t="F"/>
+<Fct c="17" el="648" l="635" n="tecnoparque_dbxconstraints_h_actividad_jira_key__checkColumnConstraints(p_key_ INTEGER)" t="F">
+<Call c="10" l="644" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="1248" l="1228" n="tecnoparque_dbxconstraints_empresas_checkTableConstraints(p_forUpdate BOOLEAN,p_data RECORD)" t="F">
+<Call c="8" l="1239" n="tecnoparque_dbxconstraints_empresas_c_empresa_checkColumnConstraints" t="F"/>
+<Call c="8" l="1240" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1241" n="tecnoparque_dbxconstraints_empresas_empresa_checkColumnConstraints" t="F"/>
+<Call c="8" l="1242" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="1244" n="tecnoparque_dbxconstraints_empresas_primary_checkUniqueConstraint" t="F"/>
+<Call c="8" l="1245" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="1936" l="1923" n="tecnoparque_dbxconstraints_actividad_jira_key__checkColumnConstraints(p_key_ INTEGER)" t="F">
+<Call c="10" l="1932" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+<Fct c="17" el="625" l="616" n="tecnoparque_dbxconstraints_h_actividad_jira_paso_checkColumnConstraints(p_paso INTEGER)" t="F"/>
+<Fct c="17" el="1913" l="1904" n="tecnoparque_dbxconstraints_actividad_jira_paso_checkColumnConstraints(p_paso INTEGER)" t="F"/>
+<Fct c="17" el="606" l="597" n="tecnoparque_dbxconstraints_h_actividad_jira_c_status_checkColumnConstraints(p_c_status INTEGER)" t="F"/>
+<Fct c="17" el="1218" l="1209" n="tecnoparque_dbxconstraints_h_actividad_jira_raiz_wa_checkColumnConstraints(p_raiz_wa INTEGER)" t="F"/>
+<Fct c="17" el="1894" l="1885" n="tecnoparque_dbxconstraints_actividad_jira_c_status_checkColumnConstraints(p_c_status INTEGER)" t="F"/>
+<Fct c="17" el="587" l="508" n="tecnoparque_dbxconstraints_h_actividad_jira_checkTableConstraints(p_forUpdate BOOLEAN,p_data RECORD)" t="F">
+<Call c="8" l="519" n="tecnoparque_dbxconstraints_h_actividad_jira_c_status_checkColumnConstraints" t="F"/>
+<Call c="8" l="520" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="521" n="tecnoparque_dbxconstraints_h_actividad_jira_paso_checkColumnConstraints" t="F"/>
+<Call c="8" l="522" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="523" n="tecnoparque_dbxconstraints_h_actividad_jira_key__checkColumnConstraints" t="F"/>
+<Call c="8" l="524" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="525" n="tecnoparque_dbxconstraints_h_actividad_jira_issue_type_checkColumnConstraints" t="F"/>
+<Call c="8" l="526" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="527" n="tecnoparque_dbxconstraints_h_actividad_jira_status_checkColumnConstraints" t="F"/>
+<Call c="8" l="528" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="529" n="tecnoparque_dbxconstraints_h_actividad_jira_priority_checkColumnConstraints" t="F"/>
+<Call c="8" l="530" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="531" n="tecnoparque_dbxconstraints_h_actividad_jira_summary_checkColumnConstraints" t="F"/>
+<Call c="8" l="532" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="533" n="tecnoparque_dbxconstraints_h_actividad_jira_description_checkColumnConstraints" t="F"/>
+<Call c="8" l="534" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="535" n="tecnoparque_dbxconstraints_h_actividad_jira_reporter_checkColumnConstraints" t="F"/>
+<Call c="8" l="536" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="537" n="tecnoparque_dbxconstraints_h_actividad_jira_assignee_checkColumnConstraints" t="F"/>
+<Call c="8" l="538" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="539" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_del_dia_checkColumnConstraints" t="F"/>
+<Call c="8" l="540" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="541" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_creacion_created_checkColumnConstraints" t="F"/>
+<Call c="8" l="542" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="543" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_inicio_checkColumnConstraints" t="F"/>
+<Call c="8" l="544" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="545" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_transcurridos_al_dia_checkColumnConstraints" t="F"/>
+<Call c="8" l="546" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="547" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_prometida__vs_ns_checkColumnConstraints" t="F"/>
+<Call c="8" l="548" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="549" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_prometida__due_date_checkColumnConstraints" t="F"/>
+<Call c="8" l="550" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="551" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_ret_vs_f_prom_ns_checkColumnConstraints" t="F"/>
+<Call c="8" l="552" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="553" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_ret_vs_f_prom_due_date_checkColumnConstraints" t="F"/>
+<Call c="8" l="554" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="555" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_brecha_checkColumnConstraints" t="F"/>
+<Call c="8" l="556" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="557" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_cierre_resolved_checkColumnConstraints" t="F"/>
+<Call c="8" l="558" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="559" n="tecnoparque_dbxconstraints_h_actividad_jira_cumplio_ns_checkColumnConstraints" t="F"/>
+<Call c="8" l="560" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="561" n="tecnoparque_dbxconstraints_h_actividad_jira_cumplio_fp_checkColumnConstraints" t="F"/>
+<Call c="8" l="562" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="563" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_efectivos_checkColumnConstraints" t="F"/>
+<Call c="8" l="564" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="565" n="tecnoparque_dbxconstraints_h_actividad_jira_labels_checkColumnConstraints" t="F"/>
+<Call c="8" l="566" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="567" n="tecnoparque_dbxconstraints_h_actividad_jira_nivel_servicio_checkColumnConstraints" t="F"/>
+<Call c="8" l="568" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="569" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_reincidencia_1_checkColumnConstraints" t="F"/>
+<Call c="8" l="570" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="571" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_reincidencia_2_checkColumnConstraints" t="F"/>
+<Call c="8" l="572" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="573" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_reincidencia_3_checkColumnConstraints" t="F"/>
+<Call c="8" l="574" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="575" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_reincidencia_4_checkColumnConstraints" t="F"/>
+<Call c="8" l="576" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="577" n="tecnoparque_dbxconstraints_h_actividad_jira_sow3_checkColumnConstraints" t="F"/>
+<Call c="8" l="578" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="579" n="tecnoparque_dbxconstraints_h_actividad_jira_fecha_autorizacion_checkColumnConstraints" t="F"/>
+<Call c="8" l="580" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="581" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_autorizacion_checkColumnConstraints" t="F"/>
+<Call c="8" l="582" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+<Call c="8" l="583" n="tecnoparque_dbxconstraints_h_actividad_jira_raiz_wa_checkColumnConstraints" t="F"/>
+<Call c="8" l="584" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
+</Fct>
+</File>
+<File m="tecnoparque_dbxdata" n="tecnoparque_dbxdata.4gl" ts="20150223173507517">
+<Dep t="tecnoparque_dbxconstraints.4gl"/>
+<Fct c="17" el="194" l="186" n="tecnoparque_dbxdata_usuarios_setDefaultValuesFromDBSchema()" t="F"/>
+<Fct c="17" el="743" l="704" n="tecnoparque_dbxdata_actividad_jira_setDefaultValuesFromDBSchema()" t="F"/>
+<Fct c="17" el="180" l="155" n="tecnoparque_dbxdata_usuarios_deleteRowByKey(p_key RECORD)" t="F">
+<Call c="15" l="163" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="17" l="174" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="10" l="176" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="698" l="675" n="tecnoparque_dbxdata_actividad_jira_deleteRowByKey(p_key RECORD)" t="F">
+<Call c="15" l="682" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="17" l="692" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="10" l="694" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="425" l="400" n="tecnoparque_dbxdata_carga_jira_insertRowByKey(p_data RECORD)" t="F">
+<Call c="15" l="405" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="10" l="407" n="libdbapp_get_sequence" p="" t="F"/>
+<Call c="39" l="409" n="tecnoparque_dbxconstraints_carga_jira_checkTableConstraints" p="tecnoparque_dbxconstraints.4gl" t="F"/>
+<Call c="19" l="419" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="12" l="421" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="145" l="95" n="tecnoparque_dbxdata_usuarios_updateRowByKey(p_key RECORD,p_dataT0 RECORD,p_dataT1 RECORD)" t="F">
+<Call c="15" l="111" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="41" l="124" n="tecnoparque_dbxconstraints_usuarios_checkTableConstraints" p="tecnoparque_dbxconstraints.4gl" t="F"/>
+<Call c="19" l="138" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="12" l="140" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="665" l="618" n="tecnoparque_dbxdata_actividad_jira_updateRowByKey(p_key RECORD,p_dataT0 RECORD,p_dataT1 RECORD)" t="F">
+<Call c="15" l="633" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="41" l="645" n="tecnoparque_dbxconstraints_actividad_jira_checkTableConstraints" p="tecnoparque_dbxconstraints.4gl" t="F"/>
+<Call c="19" l="658" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="12" l="660" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="390" l="371" n="tecnoparque_dbxdata_carga_jira_selectRowByKey(p_key RECORD)" t="F"/>
+<Fct c="17" el="361" l="353" n="tecnoparque_dbxdata_empresas_setDefaultValuesFromDBSchema()" t="F"/>
+<Fct c="17" el="347" l="324" n="tecnoparque_dbxdata_empresas_deleteRowByKey(p_key RECORD)" t="F">
+<Call c="15" l="331" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="17" l="341" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="10" l="343" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="606" l="584" n="tecnoparque_dbxdata_actividad_jira_insertRowByKey(p_data RECORD)" t="F">
+<Call c="15" l="589" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="37" l="591" n="tecnoparque_dbxconstraints_actividad_jira_checkTableConstraints" p="tecnoparque_dbxconstraints.4gl" t="F"/>
+<Call c="19" l="600" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="12" l="602" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="83" l="61" n="tecnoparque_dbxdata_usuarios_insertRowByKey(p_data RECORD)" t="F">
+<Call c="15" l="66" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="37" l="68" n="tecnoparque_dbxconstraints_usuarios_checkTableConstraints" p="tecnoparque_dbxconstraints.4gl" t="F"/>
+<Call c="19" l="77" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="12" l="79" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="314" l="267" n="tecnoparque_dbxdata_empresas_updateRowByKey(p_key RECORD,p_dataT0 RECORD,p_dataT1 RECORD)" t="F">
+<Call c="15" l="282" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="41" l="294" n="tecnoparque_dbxconstraints_empresas_checkTableConstraints" p="tecnoparque_dbxconstraints.4gl" t="F"/>
+<Call c="19" l="307" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="12" l="309" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="574" l="555" n="tecnoparque_dbxdata_actividad_jira_selectRowByKey(p_key RECORD)" t="F"/>
+<Fct c="17" el="51" l="30" n="tecnoparque_dbxdata_usuarios_selectRowByKey(p_key RECORD)" t="F"/>
+<Fct c="17" el="545" l="523" n="tecnoparque_dbxdata_carga_jira_setDefaultValuesFromDBSchema()" t="F"/>
+<Fct c="17" el="517" l="494" n="tecnoparque_dbxdata_carga_jira_deleteRowByKey(p_key RECORD)" t="F">
+<Call c="15" l="501" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="17" l="511" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="10" l="513" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="255" l="233" n="tecnoparque_dbxdata_empresas_insertRowByKey(p_data RECORD)" t="F">
+<Call c="15" l="238" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="37" l="240" n="tecnoparque_dbxconstraints_empresas_checkTableConstraints" p="tecnoparque_dbxconstraints.4gl" t="F"/>
+<Call c="19" l="249" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="12" l="251" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+<Fct c="17" el="223" l="204" n="tecnoparque_dbxdata_empresas_selectRowByKey(p_key RECORD)" t="F"/>
+<Fct c="17" el="484" l="437" n="tecnoparque_dbxdata_carga_jira_updateRowByKey(p_key RECORD,p_dataT0 RECORD,p_dataT1 RECORD)" t="F">
+<Call c="15" l="452" n="libdbapp_begin_work" p="" t="F"/>
+<Call c="41" l="464" n="tecnoparque_dbxconstraints_carga_jira_checkTableConstraints" p="tecnoparque_dbxconstraints.4gl" t="F"/>
+<Call c="19" l="477" n="libdbapp_commit_work" p="" t="F"/>
+<Call c="12" l="479" n="libdbapp_rollback_work" p="" t="F"/>
+</Fct>
+</File>
+</WorkspaceDatabase>
