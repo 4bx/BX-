@@ -56,7 +56,7 @@
     <Column fglLength="3594" fglType="10" fglTypeString="DATETIME YEAR TO SECOND" name="due_date" nativeTypeString="datetime" notNull="false" order="11" status="U" uuid="db/column1915"/>
     <Column fglLength="3594" fglType="10" fglTypeString="DATETIME YEAR TO SECOND" name="updated" nativeTypeString="datetime" notNull="false" order="12" status="U" uuid="db/column1917"/>
     <Column fglLength="3594" fglType="10" fglTypeString="DATETIME YEAR TO SECOND" name="resolved" nativeTypeString="datetime" notNull="false" order="13" status="U" uuid="db/column1919"/>
-    <Column fglLength="45" fglType="201" fglTypeString="VARCHAR2(45)" name="labels" nativeTypeString="varchar(45)" notNull="false" order="14" status="U" uuid="db/column1921"/>
+    <Column fglLength="250" fglType="201" fglTypeString="VARCHAR2(250)" name="labels" nativeTypeString="varchar(45)" notNull="false" order="14" status="U" uuid="db/column1921"/>
     <Column fglLength="3594" fglType="10" fglTypeString="DATETIME YEAR TO SECOND" name="fecha_carga" nativeTypeString="datetime" notNull="false" order="15" status="U" uuid="db/column1923"/>
     <Column fglLength="1642" fglType="10" fglTypeString="DATETIME HOUR TO SECOND" name="hora_carga" nativeTypeString="time" notNull="false" order="16" status="U" uuid="db/column1925"/>
     <Index name="primary" primary="true" status="U" unique="true" uuid="db/index67">

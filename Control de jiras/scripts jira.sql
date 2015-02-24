@@ -41,6 +41,7 @@ SELECT * FROM carga_jira
 select * from empresas;
 
 select count(*) from actividad_jira;
+select count(*) from h_actividad_jira;
 
 
 select distinct c_status from actividad_jira;

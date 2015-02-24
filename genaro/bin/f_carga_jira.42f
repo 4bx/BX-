@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='windows-1252'?>
-<Form name="f_carga_jira.tmp" build="2.41.02-2081.37" text="Form" width="39" height="13">
+<Form name="f_carga_jira.tmp" build="2.41.02-2081.37" text="Form" width="49" height="13">
   <LStr text="Form"/>
   <HBox name="hbox1">
     <VBox name="vbox1">
-      <Grid name="grid1" width="39" height="13">
+      <Grid name="grid1" width="49" height="13">
         <FormField name="formonly.ruta" colName="ruta" fieldId="0" sqlTabName="formonly" tabIndex="2">
-          <Edit width="22" posY="4" posX="4" gridWidth="22"/>
+          <Edit width="33" scroll="1" posY="4" posX="4" gridWidth="33"/>
         </FormField>
-        <Button name="bt_ruta" width="10" tabIndex="1" text="..." posY="4" posX="28" gridWidth="10">
+        <Button name="bt_ruta" width="10" tabIndex="1" text="..." posY="4" posX="38" gridWidth="10">
           <LStr text="..."/>
         </Button>
         <FormField name="formonly.ffruta" colName="ffruta" fieldId="1" sqlTabName="formonly" noEntry="1" tabIndex="3">

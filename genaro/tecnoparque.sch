@@ -44,7 +44,7 @@ carga_jira^created^10^3594^10^
 carga_jira^due_date^10^3594^11^
 carga_jira^updated^10^3594^12^
 carga_jira^resolved^10^3594^13^
-carga_jira^labels^201^45^14^
+carga_jira^labels^201^250^14^
 carga_jira^fecha_carga^10^3594^15^
 carga_jira^hora_carga^10^1642^16^
 empresas^c_empresa^257^2^1^

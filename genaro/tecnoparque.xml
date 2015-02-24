@@ -413,7 +413,7 @@
           <DynamicProperty name="label" value=""/>
         </DynamicProperties>
       </DBColumn>
-      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(45)" fglLength="45" length="45" name="labels" notNull="0">
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(250)" fglLength="250" length="250" name="labels" notNull="0">
         <DynamicProperties>
           <DynamicProperty name="widget" value="Edit"/>
           <DynamicProperty name="label" value=""/>

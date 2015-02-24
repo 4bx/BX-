@@ -1690,7 +1690,7 @@ END FUNCTION
 {&lt;BLOCK Name=&quot;fct.carga_jira_labels_checkColumnConstraints&quot;&gt;}
 #+ Check constraints on the &quot;carga_jira.labels&quot; column
 #+
-#+ @param p_labels - VARCHAR2(45) -
+#+ @param p_labels - VARCHAR2(250) -
 #+
 #+ @returnType - INTEGER
 #+ @return - ERROR_SUCCESS|ERROR_FAILURE

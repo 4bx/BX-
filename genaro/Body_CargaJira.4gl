@@ -2,7 +2,7 @@ SCHEMA tecnoparque
 
 FUNCTION  f_recuperar_ruta()
 DEFINE ruta STRING 
-  CALL WINOPENFILE(null,"xls",null,null) RETURNING ruta
+  CALL WINOPENFILE(null,"xls","xls","xls") RETURNING ruta
   DISPLAY ruta 
   RETURN ruta
 END FUNCTION 
@@ -156,7 +156,7 @@ DEFINE ar_actividad RECORD LIKE actividad_jira.*
 
       UPDATE actividad_jira
       SET issue_type = r_carga.issue_type,
-          status_ = r_carga.status_,
+          status = r_carga.status_,
           assignee = r_carga.assignee
         WHERE KEY_ =  r_carga.key_
     ELSE
@@ -200,7 +200,7 @@ DEFINE ar_actividad RECORD LIKE actividad_jira.*
         LET ar_actividad.c_status = "1"
         UPDATE actividad_jira
         SET issue_type = r_carga.issue_type,
-            status_ = r_carga.status_,
+            status = r_carga.status_,
             assignee = r_carga.assignee,
             fecha_inicio = r_carga.updated
           WHERE KEY_ =  r_carga.key_

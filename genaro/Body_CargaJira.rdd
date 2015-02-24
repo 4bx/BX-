@@ -296,7 +296,7 @@ X^91^D^78^10^0^
 S^92^79^P^resolved^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.resolved^
 D^92^0^0^0^0^0
 X^92^D^78^10^0^
-S^93^79^P^labels^VARCHAR(45)^tecnoparque.carga_jira.labels^
+S^93^79^P^labels^VARCHAR(250)^tecnoparque.carga_jira.labels^
 D^93^0^0^0^0^0
 X^93^D^78^10^0^
 S^94^79^P^fecha_carga^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.fecha_carga^
@@ -314,7 +314,7 @@ D^97^143^143^8^0^0
 X^97^r^206^25^0^
 X^97^r^205^28^0^
 X^97^r^204^24^0^
-X^97^r^203^23^0^
+X^97^r^203^22^0^
 X^97^r^202^26^0^
 X^97^r^199^51^0^
 X^97^r^182^50^0^
@@ -326,7 +326,7 @@ X^97^r^173^26^0^
 X^97^r^167^50^0^
 X^97^r^161^23^0^
 X^97^r^160^22^0^
-X^97^r^159^21^0^
+X^97^r^159^20^0^
 X^97^r^158^24^0^
 X^97^r^154^48^0^
 X^97^r^153^8^0^
@@ -351,9 +351,9 @@ X^100^r^158^32^0^
 X^100^D^143^8^0^
 S^101^97^P^status_^VARCHAR(45)^tecnoparque.carga_jira.status_^
 D^101^0^0^0^0^0
-X^101^r^203^31^0^
+X^101^r^203^30^0^
 X^101^r^174^30^0^
-X^101^r^159^29^0^
+X^101^r^159^28^0^
 X^101^r^153^16^0^
 X^101^D^143^8^0^
 S^102^97^P^priority^VARCHAR(45)^tecnoparque.carga_jira.priority^
@@ -392,7 +392,7 @@ S^110^97^P^resolved^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.resolved^
 D^110^0^0^0^0^0
 X^110^r^154^56^0^
 X^110^D^143^8^0^
-S^111^97^P^labels^VARCHAR(45)^tecnoparque.carga_jira.labels^
+S^111^97^P^labels^VARCHAR(250)^tecnoparque.carga_jira.labels^
 D^111^0^0^0^0^0
 X^111^D^143^8^0^
 S^112^97^P^fecha_carga^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.fecha_carga^
@@ -622,7 +622,7 @@ X^161^D^214^8^0^
 S^162^149^P^resolved^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.resolved^
 D^162^0^0^0^0^0
 X^162^D^214^8^0^
-S^163^149^P^labels^VARCHAR(45)^tecnoparque.carga_jira.labels^
+S^163^149^P^labels^VARCHAR(250)^tecnoparque.carga_jira.labels^
 D^163^0^0^0^0^0
 X^163^r^233^37^0^
 X^163^D^214^8^0^
@@ -979,7 +979,7 @@ X^256^D^24^10^0^
 S^257^244^V^resolved^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.resolved^
 D^257^0^0^0^0^0
 X^257^D^24^10^0^
-S^258^244^V^labels^VARCHAR(45)^tecnoparque.carga_jira.labels^
+S^258^244^V^labels^VARCHAR(250)^tecnoparque.carga_jira.labels^
 D^258^0^0^0^0^0
 X^258^D^24^10^0^
 S^259^244^V^fecha_carga^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.fecha_carga^
@@ -1045,7 +1045,7 @@ X^273^D^25^10^0^
 S^274^261^V^resolved^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.resolved^
 D^274^0^0^0^0^0
 X^274^D^25^10^0^
-S^275^261^V^labels^VARCHAR(45)^tecnoparque.carga_jira.labels^
+S^275^261^V^labels^VARCHAR(250)^tecnoparque.carga_jira.labels^
 D^275^0^0^0^0^0
 X^275^D^25^10^0^
 S^276^261^V^fecha_carga^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.fecha_carga^
@@ -1103,7 +1103,7 @@ X^290^D^26^10^0^
 S^291^278^V^resolved^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.resolved^
 D^291^0^0^0^0^0
 X^291^D^26^10^0^
-S^292^278^V^labels^VARCHAR(45)^tecnoparque.carga_jira.labels^
+S^292^278^V^labels^VARCHAR(250)^tecnoparque.carga_jira.labels^
 D^292^0^0^0^0^0
 X^292^D^26^10^0^
 S^293^278^V^fecha_carga^DATETIME YEAR TO SECOND^tecnoparque.carga_jira.fecha_carga^
@@ -1171,7 +1171,7 @@ S^303^302^V^ruta^STRING^^
 D^303^4^4^8^0^0
 X^303^r^7^10^0^
 X^303^r^6^11^0^
-X^303^l^5^52^0^
+X^303^l^5^56^0^
 X^303^D^4^8^0^
 S^304^1^C^p_actividad^base.Cursor^^private
 D^304^31^31^11^0^0
