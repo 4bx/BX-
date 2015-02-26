@@ -727,7 +727,7 @@ END FUNCTION
 {<BLOCK Name="fct.h_actividad_jira_description_checkColumnConstraints">}
 #+ Check constraints on the "h_actividad_jira.description" column
 #+
-#+ @param p_description - VARCHAR2(3000) -
+#+ @param p_description - VARCHAR2(4000) -
 #+
 #+ @returnType - INTEGER
 #+ @return - ERROR_SUCCESS|ERROR_FAILURE
@@ -1555,7 +1555,7 @@ END FUNCTION
 {<BLOCK Name="fct.carga_jira_description_checkColumnConstraints">}
 #+ Check constraints on the "carga_jira.description" column
 #+
-#+ @param p_description - VARCHAR2(3000) -
+#+ @param p_description - VARCHAR2(4000) -
 #+
 #+ @returnType - INTEGER
 #+ @return - ERROR_SUCCESS|ERROR_FAILURE
@@ -2015,7 +2015,7 @@ END FUNCTION
 {<BLOCK Name="fct.actividad_jira_description_checkColumnConstraints">}
 #+ Check constraints on the "actividad_jira.description" column
 #+
-#+ @param p_description - VARCHAR2(3000) -
+#+ @param p_description - VARCHAR2(4000) -
 #+
 #+ @returnType - INTEGER
 #+ @return - ERROR_SUCCESS|ERROR_FAILURE

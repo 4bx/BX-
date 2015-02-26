@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <WorkspaceDatabase fileContentsEncoding="CP1252" options="3" version="2.0">
-<File m="Body_CargaJira" n="Body_CargaJira.4gl" ts="20150223184021672">
+<File m="Body_CargaJira" n="Body_CargaJira.4gl" ts="20150224134005214">
 <Fct c="10" el="237" l="213" n="f_agregarRegistro(r_carga RECORD)" t="F"/>
 <Fct c="8" el="282" l="273" n="jiras_completo(ar_registros RECORD)" t="R"/>
 <Fct c="11" el="127" l="83" n="f_validaRegistro(r_validacion RECORD)" t="F"/>
@@ -10,13 +10,10 @@
 <Fct c="10" el="271" l="240" n="reporte()" t="F">
 <Call c="4" l="255" n="fgl_report_loadCurrentSettings" p="" t="F"/>
 <Call c="10" l="256" n="fgl_report_selectDevice" p="" t="F"/>
-<Call c="10" l="257" n="fgl_report_configureXLSDevice" p="" t="F"/>
-<Call c="10" l="258" n="fgl_report_setOutputFileName" p="" t="F"/>
-<Call c="10" l="259" n="fgl_report_selectPreview" p="" t="F"/>
 <Call c="14" l="260" n="fgl_report_commitCurrentSettings" p="" t="F"/>
-<Call c="14" l="265" n="jiras_completo" t="R"/>
-<Call c="26" l="267" n="jiras_completo" t="R"/>
-<Call c="15" l="269" n="jiras_completo" t="R"/>
+<Call c="14" l="265" n="jiras_completo" p="" t="R"/>
+<Call c="26" l="267" n="jiras_completo" p="" t="R"/>
+<Call c="15" l="269" n="jiras_completo" p="" t="R"/>
 </Fct>
 <Fct c="11" el="8" l="3" n="f_recuperar_ruta()" t="F">
 <Call c="8" l="5" n="WINOPENFILE" p="" t="F"/>
@@ -24,9 +21,9 @@
 <Fct c="10" el="140" l="129" n="f_usuarioValidacion(assignee VARCHAR(45))" t="F"/>
 <Fct c="10" el="81" l="77" n="f_cargaRegistro(r_carga RECORD)" t="F"/>
 <Fct c="10" el="75" l="23" n="f_jira_nuevo()" t="F">
-<Call c="10" l="37" n="f_validaRegistro" t="F"/>
-<Call c="14" l="57" n="f_agregarRegistro" t="F"/>
-<Call c="14" l="65" n="f_modificaRegistro" t="F"/>
+<Call c="10" l="37" n="f_validaRegistro" p="" t="F"/>
+<Call c="14" l="57" n="f_agregarRegistro" p="" t="F"/>
+<Call c="14" l="65" n="f_modificaRegistro" p="" t="F"/>
 <Call c="10" l="71" n="FGL_WINMESSAGE" p="" t="F"/>
 <Call c="10" l="73" n="FGL_WINMESSAGE" p="" t="F"/>
 </Fct>
@@ -40,7 +37,7 @@
 <Call c="12" l="25" n="f_jira_nuevo" p="Body_CargaJira.4gl" t="F"/>
 </Fct>
 </File>
-<File m="tecnoparque_dbxconstraints" n="tecnoparque_dbxconstraints.4gl" ts="20150223173507314">
+<File m="tecnoparque_dbxconstraints" n="tecnoparque_dbxconstraints.4gl" ts="20150224133741470">
 <Fct c="17" el="2506" l="2497" n="tecnoparque_dbxconstraints_actividad_jira_raiz_wa_checkColumnConstraints(p_raiz_wa INTEGER)" t="F"/>
 <Fct c="17" el="1199" l="1190" n="tecnoparque_dbxconstraints_h_actividad_jira_dias_autorizacion_checkColumnConstraints(p_dias_autorizacion INTEGER)" t="F"/>
 <Fct c="17" el="1875" l="1844" n="tecnoparque_dbxconstraints_actividad_jira_primary_checkUniqueConstraint(p_forUpdate BOOLEAN,p_key RECORD)" t="F">
@@ -394,7 +391,7 @@
 <Call c="8" l="584" n="libdbapp_utilBuildErrorNoAndErrorMsg" p="" t="F"/>
 </Fct>
 </File>
-<File m="tecnoparque_dbxdata" n="tecnoparque_dbxdata.4gl" ts="20150223173507517">
+<File m="tecnoparque_dbxdata" n="tecnoparque_dbxdata.4gl" ts="20150224133741826">
 <Dep t="tecnoparque_dbxconstraints.4gl"/>
 <Fct c="17" el="194" l="186" n="tecnoparque_dbxdata_usuarios_setDefaultValuesFromDBSchema()" t="F"/>
 <Fct c="17" el="743" l="704" n="tecnoparque_dbxdata_actividad_jira_setDefaultValuesFromDBSchema()" t="F"/>

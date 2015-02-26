@@ -23,6 +23,7 @@ OPEN WINDOW w1 WITH FORM "f_carga_jira"
       
     ON ACTION validacion 
       CALL f_jira_nuevo()
+      CALL LimpiatablaCarga()
       
     ON ACTION Salir 
         EXIT INPUT 

@@ -5,7 +5,7 @@ actividad_jira^issue_type^201^45^4^
 actividad_jira^status^201^45^5^
 actividad_jira^priority^201^45^6^
 actividad_jira^summary^201^300^7^
-actividad_jira^description^201^3000^8^
+actividad_jira^description^201^4000^8^
 actividad_jira^reporter^201^45^9^
 actividad_jira^assignee^201^45^10^
 actividad_jira^fecha_del_dia^10^3594^11^
@@ -37,7 +37,7 @@ carga_jira^issue_type^201^45^3^
 carga_jira^status_^201^45^4^
 carga_jira^priority^201^45^5^
 carga_jira^summary^201^300^6^
-carga_jira^description^201^3000^7^
+carga_jira^description^201^4000^7^
 carga_jira^reporter^201^45^8^
 carga_jira^assignee^201^45^9^
 carga_jira^created^10^3594^10^
@@ -56,7 +56,7 @@ h_actividad_jira^issue_type^201^45^4^
 h_actividad_jira^status^201^45^5^
 h_actividad_jira^priority^201^45^6^
 h_actividad_jira^summary^201^300^7^
-h_actividad_jira^description^201^3000^8^
+h_actividad_jira^description^201^4000^8^
 h_actividad_jira^reporter^201^45^9^
 h_actividad_jira^assignee^201^45^10^
 h_actividad_jira^fecha_del_dia^10^3594^11^

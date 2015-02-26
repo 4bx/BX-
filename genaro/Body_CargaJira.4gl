@@ -1,8 +1,13 @@
-SCHEMA tecnoparque 
+SCHEMA tecnoparque
+FUNCTION LimpiatablaCarga()
+   BEGIN WORK
+   TRUNCATE TABLE carga_jira
+   COMMIT WORK
+end FUNCTION  
 
 FUNCTION  f_recuperar_ruta()
 DEFINE ruta STRING 
-  CALL WINOPENFILE(null,"xls","xls","xls") RETURNING ruta
+  CALL WINOPENFILE(null,"xls",null,"xls") RETURNING ruta
   DISPLAY ruta 
   RETURN ruta
 END FUNCTION 
@@ -34,7 +39,7 @@ FUNCTION f_jira_nuevo()
   LET li_count_new = 1
   
   FOREACH c_actividad INTO r_carga.*
-    CALL f_validaRegistro(r_carga.key_ ,r_carga.issue_type,r_carga.status_,r_carga.assignee) 
+    CALL f_validaRegistro(r_carga.key_ ,r_carga.issue_type,r_carga.status_,r_carga.assignee,r_carga.due_date) 
       RETURNING lb_bandera_jira_nuevo
       IF lb_bandera_jira_nuevo = -1 THEN
         LET ar_carga_new[li_count_new].* = r_carga.*
@@ -88,7 +93,8 @@ DEFINE r_validacion RECORD
     KEY_ LIKE carga_jira.key_,
     issue_type LIKE carga_jira.issue_type,
     status_ LIKE carga_jira.status_,
-    assignee LIKE carga_jira.assignee
+    assignee LIKE carga_jira.assignee,
+    due_date LIKE carga_jira.due_date
   END RECORD 
 DEFINE li_registros SMALLINT  
 
@@ -108,17 +114,20 @@ DEFINE li_registros SMALLINT
                                       on u2.nombre = ?
                                         WHERE  (c_status = '1' or c_status = 'c')
                                           AND KEY_  =  ?
-                                          AND (issue_type !=  ?  OR  STATUS != ? 
-                                            or (u1.c_empresa != u2.c_empresa or (u1.c_empresa = u2.c_empresa AND u1.c_empresa <>  2))) "
+                                          AND ((issue_type !=  ? and ? != 'Delivery')    
+                                            OR  STATUS != ? 
+                                            OR (u1.c_empresa != u2.c_empresa or (u1.c_empresa = u2.c_empresa AND u1.c_empresa <>  2))
+                                            OR  fecha_prometida__due_date != ?) "
                              
     DECLARE C_REGISTRO CURSOR FOR p_registro
     LET lb_bandera_jira_nuevo =  0
     LET li_count = 1 
-    FOREACH C_REGISTRO USING r_validacion.assignee, r_validacion.KEY_ , r_validacion.issue_type 
-                            ,r_validacion.status_ 
+    FOREACH C_REGISTRO USING r_validacion.assignee, r_validacion.KEY_ ,
+                             r_validacion.issue_type,r_validacion.issue_type, 
+                             r_validacion.status_ ,r_validacion.due_date
                            INTO ar_registro.*
                            
-        DISPLAY li_registros," - ", ar_registro.KEY_," - ",ar_registro.issue_type," - ", ar_registro.status," - ",ar_registro.assignee
+        DISPLAY li_registros," - ", ar_registro.KEY_," - ",ar_registro.issue_type," - ", ar_registro.status," - ",ar_registro.assignee," - ",ar_registro.fecha_prometida__due_date
         LET lb_bandera_jira_nuevo =  1
     END FOREACH
     
@@ -151,13 +160,13 @@ DEFINE ar_actividad RECORD LIKE actividad_jira.*
     AND (c_status = "1" OR c_status = "c") 
     
     IF r_carga.status_ = "Closed" THEN 
-      LET ar_actividad.fecha_cierre_resolved = r_carga.resolved
-      LET ar_actividad.c_status = "c"
-
       UPDATE actividad_jira
       SET issue_type = r_carga.issue_type,
           status = r_carga.status_,
-          assignee = r_carga.assignee
+          assignee = r_carga.assignee,
+          fecha_cierre_resolved = r_carga.resolved,
+          fecha_prometida__due_date = r_carga.due_date,
+          c_status = "c"
         WHERE KEY_ =  r_carga.key_
     ELSE
       --actualizacion de registro activo
@@ -168,18 +177,19 @@ DEFINE ar_actividad RECORD LIKE actividad_jira.*
         INSERT INTO h_actividad_jira VALUES (ar_actividad.*)
         
        --ACTUALIZACION
-        LET ar_actividad.c_status = "1"
         UPDATE actividad_jira
         SET issue_type = r_carga.issue_type,
             STATUS = r_carga.status_,
             assignee = r_carga.assignee,
-            fecha_inicio = r_carga.updated
+            fecha_inicio = r_carga.updated,
+            fecha_prometida__due_date = r_carga.due_date,
+            c_status = 1
           WHERE KEY_ =  r_carga.key_
       ELSE 
         --actualizacion de archivo re-abierto
         --HISTORICO
         LET ar_actividad.c_status = "c"
-        LET ar_actividad.fecha_cierre_resolved = r_carga.updated
+        
         IF ar_actividad.key_ IS NULL THEN
           COMMIT WORK
           RETURN 
@@ -188,21 +198,27 @@ DEFINE ar_actividad RECORD LIKE actividad_jira.*
           --ACTUALIZACION
         CASE
           WHEN  ar_actividad.fecha_reincidencia_1 IS NULL 
-            LET ar_actividad.fecha_reincidencia_1 = ar_actividad.fecha_cierre_resolved
+            LET ar_actividad.fecha_reincidencia_1 = r_carga.updated
           WHEN  ar_actividad.fecha_reincidencia_2 IS NULL 
-            LET ar_actividad.fecha_reincidencia_2 = ar_actividad.fecha_cierre_resolved  
+            LET ar_actividad.fecha_reincidencia_2 = r_carga.updated
           WHEN  ar_actividad.fecha_reincidencia_3 IS NULL 
-            LET ar_actividad.fecha_reincidencia_3 = ar_actividad.fecha_cierre_resolved  
+            LET ar_actividad.fecha_reincidencia_3 = r_carga.updated
           WHEN  ar_actividad.fecha_reincidencia_4 IS NULL 
-            LET ar_actividad.fecha_reincidencia_4 = ar_actividad.fecha_cierre_resolved    
-        END CASE 
-        LET ar_actividad.fecha_creacion_created = r_carga.updated
-        LET ar_actividad.c_status = "1"
+            LET ar_actividad.fecha_reincidencia_4 = r_carga.updated
+        END CASE
+        
         UPDATE actividad_jira
         SET issue_type = r_carga.issue_type,
             status = r_carga.status_,
             assignee = r_carga.assignee,
-            fecha_inicio = r_carga.updated
+            fecha_inicio = r_carga.updated,
+            fecha_creacion_created = r_carga.updated,
+            fecha_prometida__due_date = r_carga.due_date,
+            c_status = "1",
+            fecha_reincidencia_1 = ar_actividad.fecha_reincidencia_1,
+            fecha_reincidencia_2 = ar_actividad.fecha_reincidencia_2,
+            fecha_reincidencia_3 = ar_actividad.fecha_reincidencia_3,
+            fecha_reincidencia_4 = ar_actividad.fecha_reincidencia_4
           WHERE KEY_ =  r_carga.key_
       END IF  
     END IF 
@@ -215,8 +231,13 @@ DEFINE r_carga RECORD LIKE carga_jira.*
 DEFINE ar_actividad RECORD LIKE actividad_jira.*
 
   BEGIN WORK
+  IF r_carga.status_  = "Closed" THEN
+    LET ar_actividad.c_status     = "c"
+    LET ar_actividad.fecha_cierre_resolved     = r_carga.resolved
+  ELSE 
+    LET ar_actividad.c_status     = "1"
+  END IF 
   
-  LET ar_actividad.c_status     = "1"
   LET ar_actividad.paso         = "new"
   LET ar_actividad.key_         = r_carga.key_
   LET ar_actividad.issue_type   = r_carga.issue_type
@@ -226,8 +247,8 @@ DEFINE ar_actividad RECORD LIKE actividad_jira.*
   LET ar_actividad.description  = r_carga.description
   LET ar_actividad.reporter     = r_carga.reporter
   LET ar_actividad.assignee     = r_carga.assignee
-
-  LET ar_actividad.assignee     = r_carga.assignee
+  
+  LET ar_actividad.fecha_prometida__due_date = r_carga.due_date
   LET ar_actividad.fecha_creacion_created = r_carga.created
   LET ar_actividad.fecha_inicio = r_carga.created
   LET ar_actividad.labels = r_carga.labels
@@ -238,12 +259,12 @@ END FUNCTION
 
 
 FUNCTION reporte()    
-DEFINE hd om.SaxDocumentHandler -- report handler
+DEFINE HANDLER om.SaxDocumentHandler -- report handler
 DEFINE li_count INTEGER 
 define ar_registros DYNAMIC ARRAY OF RECORD LIKE actividad_jira.*
 --call the mandatory functions that configure the report
 
-PREPARE  p_registros FROM "select * from actividad_jira where c_status = 1"
+PREPARE  p_registros FROM "select * from actividad_jira where c_status = 'c'"
 DECLARE c_registros CURSOR FOR p_registros
 CALL ar_registros.clear()
 LET li_count = li_count + 1
@@ -251,18 +272,23 @@ FOREACH c_registros INTO ar_registros[li_count].*
   LET li_count = li_count + 1 
 END FOREACH
   
-INITIALIZE hd TO null 
-IF fgl_report_loadCurrentSettings("carga_jira.4rp") THEN
-    CALL fgl_report_selectDevice("XLS")
-    CALL fgl_report_configureXLSDevice(1, 1, 0,0, 0, 0,0)
-    CALL fgl_report_setOutputFileName("prueba.xls")
+INITIALIZE HANDLER TO NULL 
+
+IF fgl_report_loadCurrentSettings("reporte_activos.4rp") THEN
+    --CALL fgl_report_selectDevice("PDF")
+    --CALL fgl_report_configureXLSDevice(1, 1, 0,0, 0, 0,0)
+    --CALL fgl_report_setOutputFileName("activos")
+    --CALL fgl_report_selectPreview(TRUE)
+    CALL fgl_report_selectDevice("SVG")
     CALL fgl_report_selectPreview(TRUE)
-    LET hd = fgl_report_commitCurrentSettings()      -- commit the file settings
-ELSE
-    EXIT PROGRAM
+    LET HANDLER = fgl_report_commitCurrentSettings()      -- commit the file settings
+--ELSE
+    --EXIT PROGRAM
 END IF
 
-START REPORT jiras_completo TO XML HANDLER hd
+
+
+START REPORT jiras_completo TO XML HANDLER HANDLER
     FOR li_count = 1 TO ar_registros.getLength() 
         OUTPUT TO REPORT jiras_completo(ar_registros[li_count].*)
     END FOR 
@@ -275,8 +301,6 @@ define ar_registros RECORD LIKE actividad_jira.*
 
 FORMAT
    FIRST PAGE HEADER
-
      ON EVERY ROW
        PRINTX ar_registros.*
-
 END REPORT

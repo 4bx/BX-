@@ -160,7 +160,7 @@
           <DynamicProperty name="label" value=""/>
         </DynamicProperties>
       </DBColumn>
-      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(3000)" fglLength="3000" length="3000" name="description" notNull="0">
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(4000)" fglLength="4000" length="4000" name="description" notNull="0">
         <DynamicProperties>
           <DynamicProperty name="widget" value="Edit"/>
           <DynamicProperty name="label" value=""/>
@@ -371,7 +371,7 @@
           <DynamicProperty name="label" value=""/>
         </DynamicProperties>
       </DBColumn>
-      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(3000)" fglLength="3000" length="3000" name="description" notNull="0">
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(4000)" fglLength="4000" length="4000" name="description" notNull="0">
         <DynamicProperties>
           <DynamicProperty name="widget" value="Edit"/>
           <DynamicProperty name="label" value=""/>
@@ -478,7 +478,7 @@
           <DynamicProperty name="label" value=""/>
         </DynamicProperties>
       </DBColumn>
-      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(3000)" fglLength="3000" length="3000" name="description" notNull="0">
+      <DBColumn datatype="VARCHAR" defaultValue="" fglDatatype="VARCHAR2(4000)" fglLength="4000" length="4000" name="description" notNull="0">
         <DynamicProperties>
           <DynamicProperty name="widget" value="Edit"/>
           <DynamicProperty name="label" value=""/>
