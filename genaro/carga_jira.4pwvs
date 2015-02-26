@@ -8,7 +8,6 @@
   <OpenDocuments>
     <Document filePath="MainCargaJira.4gl" locator="" module="mod-ce3"/>
     <Document filePath="Body_CargaJira.4gl" locator="" module="mod-ce3"/>
-    <Document filePath="bin/reporte_activos.4rp" locator="" module="mod-rw"/>
   </OpenDocuments>
-  <CurrentDocument filePath="C:\Users\erodriguez\Desktop\proyectos\BX+\genaro\bin\reporte_activos.4rp" module="mod-rw"/>
+  <CurrentDocument filePath="C:\Users\erodriguez\Desktop\proyectos\BX+\genaro\MainCargaJira.4gl" module="mod-ce3"/>
 </WorkspaceViewState>
