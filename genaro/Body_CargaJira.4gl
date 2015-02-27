@@ -1,28 +1,36 @@
 SCHEMA tecnoparque
-FUNCTION LimpiatablaCarga()
-   BEGIN WORK
-   TRUNCATE TABLE carga_jira
-   COMMIT WORK
-end FUNCTION  
-
-FUNCTION  f_recuperar_ruta()
-DEFINE ruta STRING 
-  CALL WINOPENFILE(null,"xls",null,"xls") RETURNING ruta
-  DISPLAY ruta 
-  RETURN ruta
-END FUNCTION 
 
 FUNCTION  f_ejecutar_carga(ruta)
 DEFINE ruta STRING
 DEFINE intruccion STRING
 DEFINE resultado INTEGER
-LET intruccion = "java -jar C:\\Users\\erodriguez\\Desktop\\proyectos\\BX+\\genaro\\bin\\CargaArchivo\\CargaArchivoDiario.jar "  
-LET ruta = '"'||ruta||'"'
-DISPLAY intruccion || ruta 
-  RUN intruccion || ruta RETURNING resultado
-IF resultado = 0 THEN 
-  CALL FGL_WINMESSAGE( "Information", "La carga termino correctamente", "exclamation" )
-END IF 
+DEFINE li_count  INTEGER
+
+  IF f_validaCargaAnterior() > 0   THEN
+    IF  fn_PreguntaSiNo("¿Eliminar carga anterior?") THEN 
+      CALL LimpiatablaCarga() 
+    ELSE 
+      CALL fn_message("Existe carga, anterior no se puede realizar la carga")
+      RETURN
+    END IF 
+  END IF
+  
+  LET intruccion = "java -jar C:\\Users\\erodriguez\\Desktop\\proyectos\\BX+\\genaro\\bin\\CargaArchivo\\CargaArchivoDiario.jar "  
+  LET ruta = '"'||ruta||'"'
+  IF LENGTH(ruta) = 0 THEN
+    CALL fn_message("Se necesita la ruta para el archivo a cargar")
+    RETURN 
+  END IF 
+  DISPLAY intruccion || ruta 
+    RUN intruccion || ruta RETURNING resultado
+  IF resultado = 0 THEN 
+    SELECT COUNT(*) 
+      INTO li_count
+    FROM carga_jira 
+    IF li_count > 0THEN 
+      CALL fn_message(  "La carga termino correctamente" )
+    END IF 
+  END IF 
 END FUNCTION 
 
 FUNCTION f_jira_nuevo()
@@ -73,30 +81,30 @@ FUNCTION f_jira_nuevo()
   END IF 
 
   IF ar_carga_new.getLength() > 0 OR ar_carga_update.getLength() > 0 THEN 
-    CALL FGL_WINMESSAGE( "Information", "La carga termino correctamente", "exclamation" )
+    CALL fn_message("La carga termino correctamente" )
   ELSE
-    CALL FGL_WINMESSAGE( "Alert", "La carga NO termino correctamente", "alert" )
+    CALL fn_messageAlert("La carga NO termino correctamente")
   END IF 
 END FUNCTION 
 
-FUNCTION f_cargaRegistro (r_carga)
+FUNCTION f_cargaRegistroBase (r_carga)
   DEFINE r_carga RECORD LIKE carga_jira.*
   BEGIN WORK
   COMMIT WORK 
 END FUNCTION 
 
 FUNCTION  f_validaRegistro(r_validacion)
-DEFINE ar_registro  RECORD LIKE actividad_jira.*
-DEFINE lb_bandera_jira_nuevo SMALLINT
-DEFINE li_count INTEGER 
-DEFINE r_validacion RECORD 
-    KEY_ LIKE carga_jira.key_,
-    issue_type LIKE carga_jira.issue_type,
-    status_ LIKE carga_jira.status_,
-    assignee LIKE carga_jira.assignee,
-    due_date LIKE carga_jira.due_date
-  END RECORD 
-DEFINE li_registros SMALLINT  
+  DEFINE ar_registro  RECORD LIKE actividad_jira.*
+  DEFINE lb_bandera_jira_nuevo SMALLINT
+  DEFINE li_count INTEGER 
+  DEFINE r_validacion RECORD 
+      KEY_ LIKE carga_jira.key_,
+      issue_type LIKE carga_jira.issue_type,
+      status_ LIKE carga_jira.status_,
+      assignee LIKE carga_jira.assignee,
+      due_date LIKE carga_jira.due_date
+    END RECORD 
+  DEFINE li_registros SMALLINT
 
     LET li_registros = 0 
     DECLARE p_nuevo CURSOR FOR SELECT COUNT(*) FROM  actividad_jira WHERE key_ = ?

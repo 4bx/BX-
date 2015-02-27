@@ -4,6 +4,7 @@
     <Application dependencies="6" externalDependencies="libgre.42x" id="4" label="Carga_jira">
       <File compilerOptions="--build-rdd" filePath="Body_CargaJira.4gl"/>
       <File filePath="f_carga_jira.4fd"/>
+      <File filePath="Globales.4gl"/>
       <File filePath="MainCargaJira.4gl"/>
       <File filePath="bin/reporte_activos.4rp"/>
     </Application>

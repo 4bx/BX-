@@ -12,8 +12,9 @@ OPEN WINDOW w1 WITH FORM "f_carga_jira"
      FROM
       ruta
   ATTRIBUTES (ACCEPT = FALSE ,CANCEL =FALSE)
+    
     ON ACTION bt_ruta
-      CALL f_recuperar_ruta() RETURNING ls_ruta
+      CALL f_recuperar_ruta("xls") RETURNING ls_ruta
       DISPLAY ls_ruta TO ruta
       CALL ui.Interface.refresh()
     ON ACTION Cargar
