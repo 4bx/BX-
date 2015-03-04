@@ -8,7 +8,7 @@ DEFINE li_count  INTEGER
 
   IF f_validaCargaAnterior() > 0   THEN
     IF  fn_PreguntaSiNo("¿Eliminar carga anterior?") THEN 
-      CALL LimpiatablaCarga() 
+      CALL LimpiatablaCarga()
     ELSE 
       CALL fn_message("Existe carga, anterior no se puede realizar la carga")
       RETURN
@@ -28,7 +28,7 @@ DEFINE li_count  INTEGER
       INTO li_count
     FROM carga_jira 
     IF li_count > 0THEN 
-      CALL fn_message(  "La carga termino correctamente" )
+      CALL fn_message("La carga termino correctamente")
     END IF 
   END IF 
 END FUNCTION 
