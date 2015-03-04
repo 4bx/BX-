@@ -8,7 +8,7 @@ DEFINE li_count  INTEGER
 
   IF f_validaCargaAnterior() > 0   THEN
     IF  fn_PreguntaSiNo("¿Eliminar carga anterior?") THEN 
-      CALL LimpiatablaCarga()
+      CALL LimpiatablaCarga() 
     ELSE 
       CALL fn_message("Existe carga, anterior no se puede realizar la carga")
       RETURN
@@ -28,7 +28,7 @@ DEFINE li_count  INTEGER
       INTO li_count
     FROM carga_jira 
     IF li_count > 0THEN 
-      CALL fn_message("La carga termino correctamente")
+      CALL fn_message(  "La carga termino correctamente" )
     END IF 
   END IF 
 END FUNCTION 
@@ -47,7 +47,7 @@ FUNCTION f_jira_nuevo()
   LET li_count_new = 1
   
   FOREACH c_actividad INTO r_carga.*
-    CALL f_validaRegistro(r_carga.key_ ,r_carga.issue_type,r_carga.status_,r_carga.assignee,r_carga.due_date) 
+    CALL f_validaRegistro(r_carga.key_ ,r_carga.issue_type,r_carga.status_,r_carga.assignee,r_carga.due_date,r_carga.updated) 
       RETURNING lb_bandera_jira_nuevo
       IF lb_bandera_jira_nuevo = -1 THEN
         LET ar_carga_new[li_count_new].* = r_carga.*
@@ -60,8 +60,6 @@ FUNCTION f_jira_nuevo()
     END IF 
   END FOREACH
   
-  --CALL ar_carga_update.deleteElement(ar_carga_update.getLength())
-  --CALL ar_carga_new.deleteElement(ar_carga_new.getLength())
   FREE c_actividad
   
   IF ar_carga_new.getLength() > 0  THEN 
@@ -102,7 +100,8 @@ FUNCTION  f_validaRegistro(r_validacion)
       issue_type LIKE carga_jira.issue_type,
       status_ LIKE carga_jira.status_,
       assignee LIKE carga_jira.assignee,
-      due_date LIKE carga_jira.due_date
+      due_date LIKE carga_jira.due_date,
+      update LIKE carga_jira.updated
     END RECORD 
   DEFINE li_registros SMALLINT
 
@@ -125,14 +124,17 @@ FUNCTION  f_validaRegistro(r_validacion)
                                           AND ((issue_type !=  ? and ? != 'Delivery')    
                                             OR  STATUS != ? 
                                             OR (u1.c_empresa != u2.c_empresa or (u1.c_empresa = u2.c_empresa AND u1.c_empresa <>  2))
-                                            OR  fecha_prometida__due_date != ?) "
+                                            OR ((fecha_prometida__due_date is null AND ? is not null)
+                                            OR (datediff(fecha_prometida__due_date,DATE_FORMAT(?,'%Y-%m-%d %T')) != 0 ))
+                                            OR datediff(fecha_inicio,DATE_FORMAT(?,'%Y-%m-%d %T')) )"
                              
     DECLARE C_REGISTRO CURSOR FOR p_registro
     LET lb_bandera_jira_nuevo =  0
     LET li_count = 1 
     FOREACH C_REGISTRO USING r_validacion.assignee, r_validacion.KEY_ ,
                              r_validacion.issue_type,r_validacion.issue_type, 
-                             r_validacion.status_ ,r_validacion.due_date
+                             r_validacion.status_ ,r_validacion.due_date,
+                             r_validacion.due_date,r_validacion.due_date, r_validacion.update
                            INTO ar_registro.*
                            
         DISPLAY li_registros," - ", ar_registro.KEY_," - ",ar_registro.issue_type," - ", ar_registro.status," - ",ar_registro.assignee," - ",ar_registro.fecha_prometida__due_date
@@ -222,6 +224,7 @@ DEFINE ar_actividad RECORD LIKE actividad_jira.*
             fecha_inicio = r_carga.updated,
             fecha_creacion_created = r_carga.updated,
             fecha_prometida__due_date = r_carga.due_date,
+            fecha_cierre_resolved = null,
             c_status = "1",
             fecha_reincidencia_1 = ar_actividad.fecha_reincidencia_1,
             fecha_reincidencia_2 = ar_actividad.fecha_reincidencia_2,
@@ -264,7 +267,6 @@ DEFINE ar_actividad RECORD LIKE actividad_jira.*
   INSERT INTO actividad_jira VALUES (ar_actividad.*)
   COMMIT WORK 
 END FUNCTION 
-
 
 FUNCTION reporte()    
 DEFINE HANDLER om.SaxDocumentHandler -- report handler

@@ -49,4 +49,11 @@ select distinct c_status from actividad_jira;
 
 update actividad_jira
 set c_status = "c"
-where status = "Closed"
+where status = "Closed";
+
+SELECT * FROM usuarios
+WHERE nombre = "Unassigned";
+insert into usuarios values("Unassigned",0);
+
+select * from empresas;
+insert into empresas values(0,"Unassigned");

@@ -6,9 +6,9 @@
     <Node path="/carga_jira.4pw/Carga/Carga_jira" type="pm/application"/>
   </ExpandedNodes>
   <OpenDocuments>
-    <Document filePath="Body_CargaJira.4gl" locator="" module="mod-ce3"/>
     <Document filePath="MainCargaJira.4gl" locator="" module="mod-ce3"/>
     <Document filePath="Globales.4gl" locator="" module="mod-ce3"/>
+    <Document filePath="Body_CargaJira.4gl" locator="" module="mod-ce3"/>
   </OpenDocuments>
   <CurrentDocument filePath="C:\Users\erodriguez\Desktop\proyectos\BX+\genaro\Body_CargaJira.4gl" module="mod-ce3"/>
 </WorkspaceViewState>
