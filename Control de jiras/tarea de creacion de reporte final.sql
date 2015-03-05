@@ -94,12 +94,3 @@ inner join usuarios u
 on assignee = u.nombre
 inner join empresas e
 on u.c_empresa = e.c_empresa;
-
-
-select * from actividad_jira
-where fecha_inicio  = "2099/12/30 00:00:00";
-
-SET SQL_SAFE_UPDATES=0;
-update actividad_jira 
-	set fecha_inicio = "2015/02/03 00:00:00"
-where fecha_inicio  = "2099/12/30 00:00:00";
